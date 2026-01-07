@@ -47,7 +47,6 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 **Jiaming Ma***, **Zhiqing Cui***, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
 
 **IJCAI 2025 (Oral)**
-- We propose a lightweight and effective nationwide air quality forecasting framework that leverages causal learning and covariate modeling.
 </div>
 </div>
 
@@ -153,6 +152,5 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 # 💻 Internships
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
 
----
-
+# 👥 Visitors
 {% include visitor-map.html %}
