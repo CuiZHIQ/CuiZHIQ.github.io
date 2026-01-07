@@ -22,10 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zhiqing Cui"
-  avatar           : "images/Qing.jpg"
+  avatar           : "/images/Qing.jpg"
   bio              : "Reading College, Undergraduate"
   location         : "Nanjing, China"
-  employer         : "NUIST & University of Reading"
+  employer         : "NUIST &amp; University of Reading"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=esJ61vUAAAAJ&hl"
   email            : "dh803755@student.reading.ac.uk"
