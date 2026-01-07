@@ -140,8 +140,8 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge. 
 
 # 📖 Research Experiences
-- *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Luojingjia.
-- *2024 - 2025*, <img src='images/ustc.png' alt="USTC" style="height: 1em; vertical-align: middle;"> Data Intelligence Laboratory, University of Science and Technology of China. Mentor: Binwu Wang.
+- *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
+- *2024 - 2025*, <img src='images/ustc.png' alt="USTC" style="height: 1em; vertical-align: middle;"> Data Intelligence Laboratory, University of Science and Technology of China. Mentor: Binwu Wang, Yang Wang.
 - *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
 - *2025 - 2026*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan. 
 
