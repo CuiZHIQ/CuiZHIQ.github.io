@@ -27,13 +27,13 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 
 # 🔥 News
-- *2025.11*: &nbsp;🎉🎉 Received full funding from the AAAI Undergraduate Consortium.
+- *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium.
 - *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
 - *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
-- *2025.04*: &nbsp;🎉🎉 My first top-tier conference paper "Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting" was accepted as an oral presentation at IJCAI. I was responsible for compiling the large-scale dataset LargeAQ and delivering the oral presentation. Thanks to Binwu and Jiaming for their contributions.
+- *2025.04*: &nbsp;🎉🎉 My first top-tier conference paper "CauAir" was accepted as an oral presentation at IJCAI. I was responsible for compiling the large-scale dataset LargeAQ and delivering the oral presentation. Thanks to Binwu and Jiaming for their contributions.
 - *2025.03*: &nbsp;🎉🎉 My work on foundation models for tropical cyclones was accepted by Frontiers of Computer Science. Presented at EGU, AGU, and other meteorology conferences, and received recognition from NASA.
-- *2025.02*: &nbsp;🎉🎉 Won the 3rd place in the ACL LLMSR@ XLLM25 competition. Thanks to Jiahao for the collaboration.
-- *2024.06*: &nbsp;🏆 Received the First-Class Scholarship from Nanjing University of Information Science and Technology (NUIST). 
+- *2025.02*: &nbsp;🏆🏆 Won the 3rd place in the ACL LLMSR@ XLLM25 competition. Thanks to Jiahao for the collaboration.
+- *2024.06*: &nbsp;🏆🏆 Received the First-Class Scholarship from Nanjing University of Information Science and Technology (NUIST). 
 
 # 📝 Publications 
 
@@ -154,3 +154,5 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
 
 ---
+
+{% include visitor-map.html %}
