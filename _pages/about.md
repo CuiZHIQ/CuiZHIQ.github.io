@@ -17,42 +17,140 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degree program at the University of Reading and Nanjing University of Information Science and Technology, majoring in Data Science. I am seeking PhD positions for 2027 Fall and warmly welcome any remote/onsite industrial or research internships. Please feel free to contact me via email at <a href="mailto:zhiqing@nuist.edu.cn">zhiqing@nuist.edu.cn</a> or <a href="mailto:dh803755@student.reading.ac.uk">dh803755@student.reading.ac.uk</a>.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+# 🔍 Research Topics
+
+My research interests include spatiotemporal data mining and multimodal reasoning. Currently, I am dedicated to studying the practical applications of spatiotemporal data mining in large-scale real-world scenarios, particularly in Earth science and air pollution management. I am particularly interested in causal relationships in data and strive to introduce large model reasoning processes into real-world scenarios. Additionally, I am interested in LLM agents, reasoning, and memory. My research aims to enhance human understanding of the Earth's environment and practical applications in the real world.
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.06*: &nbsp;🎉🎉 Received the First-Class Scholarship from Nanjing University of Information Science and Technology (NUIST).
+- *2025.02*: &nbsp;🎉🎉 Won the 3rd place in the ACL LLMSR@ XLLM25 competition. Thanks to Jiahao for the collaboration.
+- *2025.03*: &nbsp;🎉🎉 My work on foundation models for tropical cyclones was accepted by Frontiers of Computer Science. Presented at EGU, AGU, and other meteorology conferences, and received recognition from NASA.
+- *2025.04*: &nbsp;🎉🎉 My first top-tier conference paper "Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting" was accepted as an oral presentation at IJCAI. I was responsible for compiling the large-scale dataset LargeAQ and delivering the oral presentation. Thanks to Binwu and Jiaming for their contributions.
+- *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
+- *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
+- *2025.11*: &nbsp;🎉🎉 Received full funding from the AAAI Undergraduate Consortium. 
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+## First-Author Accepted Papers
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/CauAir.png' alt="CauAir" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting]()
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Jiaming Ma***, **Zhiqing Cui***, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**IJCAI 2025 (Oral)**
+- We propose a lightweight and effective nationwide air quality forecasting framework that leverages causal learning and covariate modeling.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation]()
+
+**Zhiqing Cui**, Jiahao Yuan, Hanqing Wang, Yanshu Li, Chenxu Du, Zhenglong Ding
+
+**ACM MM 2025 (Oral)**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Frontiers of Computer Science</div><img src='images/TC.png' alt="Prithvi-TC" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC]()
+
+**Zhiqing Cui**, Fan Meng, Jingjia Luo
+
+**Frontiers of Computer Science**
+</div>
+</div>
+
+## First-Author Preprints
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
+
+**Zhiqing Cui**, Binwu Wang, Qingxiang Liu, Yeqiang Wang, Zhengyang Zhou, Yuxuan Liang, Yang Wang
+
+**arXiv preprint**
+</div>
+</div>
+
+## Co-Authored Papers
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/Reflect.png' alt="ReflectDiffu" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via a RL-Diffusion Framework]()
+
+Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
+
+**ACL 2025 (Main Conference)**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning]()
+
+Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman Naseem
+
+**arXiv preprint**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/Affor.png' alt="Affordance-R1" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model]()
+
+Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cui**, Jiahao Yuan, Yifan Han, Mingyu Liu, Yuexin Ma
+
+**AAAI 2026 (Oral)**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models]()
+
+Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu Wan, Sheng Sun, Lvchun Wang, Wei Yu, Yuxuan Liang
+
+**arXiv preprint**
+</div>
+</div>
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2024.06*: First-Class Scholarship, Nanjing University of Information Science and Technology (NUIST).
+- *2024.09*: First Prize, National Undergraduate Mathematical Contest in Modeling (Jiangsu Province).
+- *2025.04*: 3rd Place, ACL LLMSR@ XLLM25 Competition.
+- *2025.08*: Second Prize (National Level), China Graduate Mathematical Contest in Modeling (participated independently as an undergraduate).
+- *2025.10*: Full Scholarship, AAAI-26 Undergraduate Consortium (UC).
+- *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge. 
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# 📖 Research Experiences
+- *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Luojingjia.
+- *2024 - 2025*, <img src='images/ustc.png' alt="USTC" style="height: 1em; vertical-align: middle;"> Data Intelligence Laboratory, University of Science and Technology of China. Mentor: Binwu Wang.
+- *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
+- *2025 - 2026*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan. 
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+# 🎓 Services
+- **Journal Reviewer**: Neurocomputing
+- **Conference Reviewer**: ACL
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
+
+---
+# Visitors
+{% include visitor-stats.html %}

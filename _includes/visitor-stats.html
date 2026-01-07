@@ -1,0 +1,112 @@
+<!-- Google Analytics Visitor Statistics -->
+<div style="margin-top: 3em; padding: 2em; background-color: #f8f9fa; border-radius: 8px; text-align: center;">
+  <h2 style="margin-bottom: 1.5em; color: #333;">👥 Visitors</h2>
+  
+  <!-- Visitor Statistics Display -->
+  <div id="ga-visitor-stats" style="margin-bottom: 2em;">
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2em; margin-bottom: 2em;">
+      <div style="flex: 1; min-width: 150px;">
+        <div style="font-size: 2.5em; font-weight: bold; color: #4285f4; margin-bottom: 0.5em;" id="total-visitors">-</div>
+        <div style="color: #666; font-size: 0.95em;">Total Visitors</div>
+      </div>
+      <div style="flex: 1; min-width: 150px;">
+        <div style="font-size: 2.5em; font-weight: bold; color: #34a853; margin-bottom: 0.5em;" id="month-visitors">-</div>
+        <div style="color: #666; font-size: 0.95em;">This Month</div>
+      </div>
+      <div style="flex: 1; min-width: 150px;">
+        <div style="font-size: 2.5em; font-weight: bold; color: #ea4335; margin-bottom: 0.5em;" id="countries">-</div>
+        <div style="color: #666; font-size: 0.95em;">Countries</div>
+      </div>
+    </div>
+    
+    <!-- Visitor Map -->
+    <div style="background-color: white; border-radius: 8px; padding: 1.5em; margin-top: 2em; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+      <p style="color: #999; margin-bottom: 1em;">Visitor locations around the world</p>
+      <div id="visitor-map" style="width: 100%; height: 400px; border-radius: 6px; overflow: hidden;">
+        <!-- Google Analytics Real-time Report Embed -->
+        <iframe 
+          src="https://analytics.google.com/analytics/web/#/p{{ site.google_analytics_id | replace: 'G-', '' }}/realtime/overview"
+          width="100%" 
+          height="400" 
+          frameborder="0"
+          style="border: none; border-radius: 6px;"
+          title="Google Analytics Visitor Map">
+        </iframe>
+      </div>
+      <p style="color: #999; font-size: 0.85em; margin-top: 1em;">
+        View detailed analytics at <a href="https://analytics.google.com/" target="_blank" style="color: #4285f4;">Google Analytics</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Google Analytics Visitor Statistics using gtag API
+  // This uses the Google Analytics data that's already being collected
+  
+  var gaId = '{{ site.google_analytics_id }}';
+  
+  // Function to fetch visitor statistics
+  function fetchVisitorStats() {
+    // Note: Direct access to Google Analytics data requires Reporting API
+    // For now, we'll use a workaround with gtag events
+    
+    // Try to get data from Google Analytics
+    if (typeof gtag !== 'undefined') {
+      // Use gtag to track custom events
+      // Note: This is a simplified version - full implementation requires GA Reporting API
+      
+      // Display loading state
+      document.getElementById('total-visitors').textContent = '...';
+      document.getElementById('month-visitors').textContent = '...';
+      document.getElementById('countries').textContent = '...';
+      
+      // Since we can't directly query GA data from frontend,
+      // we'll show a message directing users to GA dashboard
+      setTimeout(function() {
+        document.getElementById('total-visitors').innerHTML = '<a href="https://analytics.google.com/" target="_blank" style="color: #4285f4; text-decoration: none;">View in GA</a>';
+        document.getElementById('month-visitors').innerHTML = '<a href="https://analytics.google.com/" target="_blank" style="color: #34a853; text-decoration: none;">View in GA</a>';
+        document.getElementById('countries').innerHTML = '<a href="https://analytics.google.com/" target="_blank" style="color: #ea4335; text-decoration: none;">View in GA</a>';
+      }, 1000);
+    }
+  }
+  
+  // Initialize when page loads
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fetchVisitorStats);
+  } else {
+    fetchVisitorStats();
+  }
+  
+  // Track page view (already done by analytics.html, but we can add custom tracking)
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'page_view', {
+      'page_title': document.title,
+      'page_location': window.location.href
+    });
+  }
+})();
+</script>
+
+<!-- 
+Note: To display real-time visitor statistics, you need:
+
+1. **Google Analytics Reporting API** (recommended):
+   - Requires OAuth 2.0 authentication
+   - Create a backend service (Node.js, Python, etc.) to fetch data
+   - Cache data and serve via API endpoint
+   - Frontend fetches from your API
+
+2. **Alternative: Use Google Analytics Embed API**:
+   - Embed GA reports directly (requires user to be logged in)
+   - More complex setup but works for static sites
+
+3. **Third-party services** (easiest):
+   - GoatCounter: https://www.goatcounter.com/ (free, privacy-friendly)
+   - Plausible: https://plausible.io/ (paid, privacy-friendly)
+   - Simple Analytics: https://simpleanalytics.com/ (paid)
+
+Current implementation shows the structure and links to GA dashboard.
+For real-time data, implement one of the solutions above.
+-->
