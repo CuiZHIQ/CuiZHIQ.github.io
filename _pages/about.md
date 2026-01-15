@@ -98,7 +98,7 @@ Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning]()
