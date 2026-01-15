@@ -105,7 +105,7 @@ Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 
 Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman Naseem
 
-**arXiv preprint**
+**WWW**
 </div>
 </div>
 
