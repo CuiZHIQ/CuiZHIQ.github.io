@@ -27,8 +27,8 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 
 # 🔥 News
-- *2026.1*: &nbsp;🎉🎉 My paper "Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting" was published on arXiv.
-- *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium.
+- *2026.01*: &nbsp;🎉🎉 My led paper "OminiAir" was published on arXiv, the best air quality dataset and model in the world.
+- *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium, the scholarship for best UG AI researchers. Thanks to AAAI!
 - *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
 - *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
 - *2025.04*: &nbsp;🎉🎉 My first top-tier conference paper "CauAir" was accepted as an oral presentation at IJCAI. I was responsible for compiling the large-scale dataset LargeAQ and delivering the oral presentation. Thanks to Binwu and Jiaming for their contributions.
