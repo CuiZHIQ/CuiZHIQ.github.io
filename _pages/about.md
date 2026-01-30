@@ -27,6 +27,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 
 # 🔥 News
+- *2026.1*: &nbsp;🎉🎉 My paper "Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting" was published on arXiv.
 - *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium.
 - *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
 - *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
@@ -73,6 +74,17 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 </div>
 
 ## First-Author Preprints
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting]()
+
+**Zhiqing Cui**, Siru Zhong, Ming Jin, Shirui Pan, Qingsong Wen, Yuxuan Liang
+
+**arXiv preprint**
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -131,6 +143,17 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
+
+Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxuan Liang
+
+**arXiv preprint**
+</div>
+</div>
+
 # 🎖 Honors and Awards
 - *2024.06*: First-Class Scholarship, Nanjing University of Information Science and Technology (NUIST).
 - *2024.09*: First Prize, National Undergraduate Mathematical Contest in Modeling (Jiangsu Province).
@@ -147,7 +170,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing
-- **Conference Reviewer**: ACL
+- **Conference Reviewer**: ACL, IJCAI, ICML
 
 # 💻 Internships
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
