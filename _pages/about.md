@@ -75,7 +75,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 </div>
 
 ## First-Author Preprints
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/paperx.png' alt="paperx" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG]()
