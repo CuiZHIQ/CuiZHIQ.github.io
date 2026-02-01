@@ -128,7 +128,7 @@ Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 
 Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman Naseem
 
-**WWW4Good**
+**WWW 2026**
 </div>
 </div>
 
