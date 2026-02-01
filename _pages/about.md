@@ -27,6 +27,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 
 # 🔥 News
+- *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv, We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
 - *2026.01*: &nbsp;🎉🎉 My led paper "OminiAir" was published on arXiv, the best air quality dataset and model in the world.
 - *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium, the scholarship for best UG AI researchers. Thanks to AAAI!
 - *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
@@ -45,7 +46,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 [Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting]()
 
-**Jiaming Ma***, **Zhiqing Cui***, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
+**Jiaming Ma†, Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
 
 **IJCAI 2025 (Oral)**
 </div>
@@ -74,6 +75,16 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 </div>
 
 ## First-Author Preprints
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG]()
+
+**Tao Yu†, Minghui Zhang†, Zhiqing Cui†**, Hao Wang, Zhongtian Luo, Shenghua Chai, Junhao Gong, Yuzhao Peng, Yuxuan Zhou, Yujia Yang, Zhenghao Zhang, Haopeng Jin, Xinming Wang, Yufei Xiong, Jiabing Yang, Jiahao Yuan, Hanqing Wang, Hongzhu Yi, YiFan Zhang, Yan Huang, Liang Wang
+
+**arXiv preprint**
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
