@@ -22,9 +22,7 @@ redirect_from:
 Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degree program at the University of Reading and Nanjing University of Information Science and Technology, majoring in Data Science. I am seeking PhD positions for 2027 Fall and warmly welcome any remote/onsite industrial or research internship. Please feel free to contact me via email at <a href="mailto:zhiqing@nuist.edu.cn">zhiqing@nuist.edu.cn</a> or <a href="mailto:dh803755@student.reading.ac.uk">dh803755@student.reading.ac.uk</a>.
 
 # 🔍 Research Topics
-
-My research interests include spatiotemporal data mining and multimodal reasoning. Currently, I am dedicated to studying the practical applications of spatiotemporal data mining in large-scale real-world scenarios, particularly in Earth science and air pollution management. I worked with Assistant Professor [Binwu Wang](https://github.com) at USTC on spatiotemporal data mining for over a year, publishing multiple papers. Currently, I am a visiting intern at HKUST(GZ) with Professor [Yuxuan Liang](https://github.com). I am particularly interested in causal relationships in data and strive to introduce large model reasoning processes into real-world scenarios. Additionally, I am interested in LLM agents, reasoning, and memory and collaborate with [Jiahao Yuan](https://github.com) in the field of Large Language Models (LLM). My research aims to enhance human understanding of the Earth's environment and practical applications in the real world.
-
+My research interests include spatiotemporal data mining and multimodal reasoning. I am dedicated to studying the practical applications of spatiotemporal data mining in large-scale real-world scenarios, particularly in Earth science and air pollution management. I worked with Assistant Professor [Binwu Wang](https://github.com) at USTC on spatiotemporal data mining for over a year, publishing multiple papers. I was a visiting intern at HKUST(GZ) with Professor [Yuxuan Liang](https://github.com), where I focused on causal relationships in data and on bringing large-model reasoning into real-world settings. I am also interested in LLM agents, reasoning, and memory; together with my friend [Jiahao Yuan](https://github.com) at ECNU and Professor [Wentao Zhang](https://github.com) at PKU, I am working on automated paper agents. I am currently continuing my research on Earth intelligence at MIT under Professor [Sherrie Wang](https://github.com) and Dr. [Qidong Yang](https://github.com). My work aims to improve human understanding of the Earth's environment and to enable practical applications in the real world.
 
 # 🔥 News
 - *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv, We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
@@ -176,8 +174,10 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 # 📖 Research Experiences
 - *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
 - *2024 - 2025*, <img src='images/ustc.png' alt="USTC" style="height: 1em; vertical-align: middle;"> Data Intelligence Laboratory, University of Science and Technology of China. Mentor: Binwu Wang, Yang Wang.
+- *2025 - 2025*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
 - *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
-- *2025 - 2026*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan. 
+- *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
+- *2026 - 2027*, <img src='images/MIT.png' alt="MIT" style="height: 1em; vertical-align: middle;"> Earth Intelligence Lab, Massachusetts Institute of Technology. Mentors: Qidong Yang, Sherrie Wang. 
 
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing
