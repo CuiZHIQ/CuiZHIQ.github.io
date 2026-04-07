@@ -39,7 +39,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 
 ## First-Author Accepted Papers
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
