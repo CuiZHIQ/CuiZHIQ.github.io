@@ -25,10 +25,10 @@ Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degre
 My research interests include spatiotemporal data mining and multimodal reasoning. I am dedicated to studying the practical applications of spatiotemporal data mining in large-scale real-world scenarios, particularly in Earth science and air pollution management. I worked with Assistant Professor [Binwu Wang](https://github.com) at USTC on spatiotemporal data mining for over a year, publishing multiple papers. I was a visiting intern at HKUST(GZ) with Professor [Yuxuan Liang](https://github.com), where I focused on causal relationships in data and on bringing large-model reasoning into real-world settings. I am also interested in LLM agents, reasoning, and memory; together with my friend [Jiahao Yuan](https://github.com) at ECNU and Professor [Wentao Zhang](https://github.com) at PKU, I am working on automated paper agents. My work aims to improve human understanding of the Earth's environment and to enable practical applications in the real world.
 
 # 🔥 News
+- *2026.04*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was accepted main conference on ACL.
 - *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv, We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
 - *2026.01*: &nbsp;🎉🎉 My led paper "OminiAir" was published on arXiv, the best air quality dataset and model in the world.
 - *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium, the scholarship for best UG AI researchers. Thanks to AAAI!
-- *2025.10*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was published on arXiv.
 - *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
 - *2025.04*: &nbsp;🎉🎉 My first top-tier conference paper "CauAir" was accepted as an oral presentation at IJCAI. I was responsible for compiling the large-scale dataset LargeAQ and delivering the oral presentation. Thanks to Binwu and Jiaming for their contributions.
 - *2025.03*: &nbsp;🎉🎉 My work on foundation models for tropical cyclones was accepted by Frontiers of Computer Science. Presented at EGU, AGU, and other meteorology conferences, and received recognition from NASA.
@@ -38,6 +38,17 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 # 📝 Publications 
 
 ## First-Author Accepted Papers
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
+
+**Zhiqing Cui**, Binwu Wang, Qingxiang Liu, Yeqiang Wang, Zhengyang Zhou, Yuxuan Liang, Yang Wang
+
+**ACL 2026 (Main)**
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/CauAir.png' alt="CauAir" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -92,17 +103,7 @@ My research interests include spatiotemporal data mining and multimodal reasonin
 **Zhiqing Cui**, Siru Zhong, Ming Jin, Shirui Pan, Qingsong Wen, Yuxuan Liang
 
 **arXiv preprint**
-</div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
-
-**Zhiqing Cui**, Binwu Wang, Qingxiang Liu, Yeqiang Wang, Zhengyang Zhou, Yuxuan Liang, Yang Wang
-
-**arXiv preprint**
 </div>
 </div>
 
@@ -169,7 +170,8 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 - *2025.04*: 3rd Place, ACL LLMSR@ XLLM25 Competition.
 - *2025.08*: Second Prize (National Level), China Graduate Mathematical Contest in Modeling (participated independently as an undergraduate).
 - *2025.10*: Full Scholarship, AAAI-26 Undergraduate Consortium (UC).
-- *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge. 
+- *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge.
+- *2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S).
 
 # 📖 Research Experiences
 - *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
@@ -179,7 +181,7 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 - *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
 
 # 🎓 Services
-- **Journal Reviewer**: Neurocomputing
+- **Journal Reviewer**: Neurocomputing, TNNLS
 - **Conference Reviewer**: ACL, IJCAI, ICML
 
 # 💻 Internships
