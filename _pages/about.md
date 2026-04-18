@@ -21,8 +21,11 @@ redirect_from:
 
 Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degree program at the University of Reading and Nanjing University of Information Science and Technology, majoring in Data Science. I am seeking PhD positions for 2027 Fall and warmly welcome any remote/onsite industrial or research internship. Please feel free to contact me via email at <a href="mailto:zhiqing@nuist.edu.cn">zhiqing@nuist.edu.cn</a> or <a href="mailto:dh803755@student.reading.ac.uk">dh803755@student.reading.ac.uk</a>.
 
+# 🚀 Research Aim
+My research interests lie at the intersection of AI for Earth Science (AI4Earth), spatiotemporal data mining, and the reasoning, scheduling, and memory capabilities of LLM agents. I am dedicated to applying these techniques, along with multimodal reasoning, to large-scale real-world scenarios like air pollution management, ultimately aiming to deepen our understanding of the Earth's environment.
+
 # 🔍 Research Topics
-My research interests include spatiotemporal data mining and multimodal reasoning. I am dedicated to studying the practical applications of spatiotemporal data mining in large-scale real-world scenarios, particularly in Earth science and air pollution management. I worked with Assistant Professor [Binwu Wang](https://github.com) at USTC on spatiotemporal data mining for over a year, publishing multiple papers. I was a visiting intern at HKUST(GZ) with Professor [Yuxuan Liang](https://github.com), where I focused on causal relationships in data and on bringing large-model reasoning into real-world settings. I am also interested in LLM agents, reasoning, and memory; together with my friend [Jiahao Yuan](https://github.com) at ECNU and Professor [Wentao Zhang](https://github.com) at PKU, I am working on automated paper agents. My work aims to improve human understanding of the Earth's environment and to enable practical applications in the real world.
+Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas A&M University working with Professor [Yu Zhang](https://github.com).
 
 # 🔥 News
 - *2026.04*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was accepted main conference on ACL.
@@ -179,7 +182,8 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 - *2025 - 2025*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
 - *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
 - *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
-
+- *2026 - 2026*, <img src='images/tamu.png' alt="TAMU" style="height: 1em; vertical-align: middle;">SKY Lab, Texas A&M University. Mentor: Yu Zhang.
+  
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing, TNNLS
 - **Conference Reviewer**: ACL, IJCAI, ICML
