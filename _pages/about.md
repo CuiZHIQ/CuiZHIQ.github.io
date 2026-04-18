@@ -182,7 +182,7 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 - *2025 - 2025*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
 - *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
 - *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
-- *2026 - 2026*, <img src='images/tamu.png' alt="TAMU" style="height: 1em; vertical-align: middle;">SKY Lab, Texas A&M University. Mentor: Yu Zhang.
+- *2026 - 2026*, <img src='images/tamu.png' alt="TAMU" style="height: 1em; vertical-align: middle;"> SKY Lab, Texas A&M University. Mentor: Yu Zhang.
   
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing, TNNLS
