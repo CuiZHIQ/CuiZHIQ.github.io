@@ -27,7 +27,8 @@ My research interests lie at the intersection of AI for Earth Science (AI4Earth)
 # 🔍 Research Topics
 Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents.
 
-# 🔥 News
+# 🔥 News 
+- *2026.04*: &nbsp;🎉🎉 My paper "MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting" was accepted by IEEE TKDE, initiated during my freshman year. Thanks to Bin!
 - *2026.04*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was accepted main conference on ACL.
 - *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv, We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
 - *2026.01*: &nbsp;🎉🎉 My led paper "OminiAir" was published on arXiv, the best air quality dataset and model in the world.
@@ -64,9 +65,19 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TKDE</div><img src='images/madgcn.png' alt="MADGCN" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+[MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting]()
+
+**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang, Zhengyang Zhou, Fan Meng, Jingjia Luo, Yang Wang
+
+**IEEE Transactions on Knowledge and Data Engineering (TKDE)**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 [Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation]()
 
 **Zhiqing Cui**, Jiahao Yuan, Hanqing Wang, Yanshu Li, Chenxu Du, Zhenglong Ding
