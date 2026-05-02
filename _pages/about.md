@@ -123,6 +123,17 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 ## Co-Authored Papers
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">icml</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
+
+Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxuan Liang
+
+**ICML 2026**
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/Reflect.png' alt="ReflectDiffu" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -163,20 +174,7 @@ Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cu
 
 Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu Wan, Sheng Sun, Lvchun Wang, Wei Yu, Yuxuan Liang
 
-**arXiv preprint**
-</div>
-</div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
-
-Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxuan Liang
-
-**arXiv preprint**
-</div>
-</div>
 
 # 🎖 Honors and Awards
 - *2024.06*: First-Class Scholarship, Nanjing University of Information Science and Technology (NUIST).
