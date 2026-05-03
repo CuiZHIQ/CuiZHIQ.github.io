@@ -123,7 +123,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 ## Co-Authored Papers
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">icml</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
