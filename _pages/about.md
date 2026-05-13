@@ -25,12 +25,13 @@ Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degre
 My research interests lie at the intersection of AI for Earth Science (AI4Earth), spatiotemporal data mining, and the reasoning, scheduling, and memory capabilities of LLM agents. I am dedicated to applying these techniques, along with multimodal reasoning, to large-scale real-world scenarios like air pollution management, ultimately aiming to deepen our understanding of the Earth's environment.
 
 # 🔍 Research Topics
-Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents.
+Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
 
 # 🔥 News 
+- *2026.02*: &nbsp;🎉🎉 My paper "Uno-Orchestra" was published on arXiv. This work marks my initial exploration into multi-agent reinforcement learning and routing orchestration.
 - *2026.04*: &nbsp;🎉🎉 My paper "MADGCN" was accepted by IEEE TKDE, initiated during my freshman year. Thanks to Bin!
 - *2026.04*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was accepted main conference on ACL.
-- *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv, We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
+- *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv. We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
 - *2026.01*: &nbsp;🎉🎉 My led paper "OminiAir" was published on arXiv, the best air quality dataset and model in the world.
 - *2025.11*: &nbsp;🏆🏆 Received full funding from the AAAI Undergraduate Consortium, the scholarship for best UG AI researchers. Thanks to AAAI!
 - *2025.06*: &nbsp;🎉🎉 My led work "Draw with Thought" was accepted by ACM MM, and I delivered the oral presentation.
@@ -98,6 +99,16 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 
 ## First-Author Preprints
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/uno.png' alt="Uno-Orchestra" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation]()
+
+**Zhiqing Cui**, Haotong Xie, Jiahao Yuan, Cheng Yang, Hanqing Wang, Yuxin Wu, Yifan Wu, Siru Zhong, Tao Yu, Yifu Guo, Siyu Zhang, Xinlei Yu, Qibing Ren, Usman Naseem
+
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/paperx.png' alt="paperx" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -196,10 +207,11 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
 - *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
 - *2026 - 2026*, <img src='images/tamu.png' alt="TAMU" style="height: 1em; vertical-align: middle;"> SKY Lab, Texas AM University. Mentor: Yu Zhang.
+- *2026 - 2026*, <img src='images/MIT.png' alt="MIT" style="height: 1em; vertical-align: middle;"> JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: Jinhua Zhao, Dingyi Zhuang.
   
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing, TNNLS
-- **Conference Reviewer**: ACL, IJCAI, ICML
+- **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS
 
 # 💻 Internships
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
