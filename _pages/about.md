@@ -28,6 +28,7 @@ My research interests lie at the intersection of AI for Earth Science (AI4Earth)
 Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
 
 # 🔥 News 
+- *2026.06*: &nbsp;🏆🏆 Received full funding from the KDD Undergraduate Consortium and Travel Grant. See you on the beautiful Jeju Island. Thanks to KDD!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the Association for Computational Linguistics in recognition of exceptional contributions and accomplishments. Thanks to ACL!
 - *2026.05*: &nbsp;🎉🎉 My paper "Uno-Orchestra" was published on arXiv. This work marks my initial exploration into multi-agent reinforcement learning and routing orchestration.
 - *2026.04*: &nbsp;🎉🎉 My paper "MADGCN" was accepted by IEEE TKDE, initiated during my freshman year. Thanks to Bin!
@@ -201,6 +202,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge.
 - *2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S).
 - *2026.06*: Full Scholarship, ACL Diversity and Inclusion Subsidy.
+- *2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC).
 
 # 📖 Research Experiences
 - *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
