@@ -214,8 +214,8 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2026 - 2026*, <img src='images/MIT.png' alt="MIT" style="height: 1em; vertical-align: middle;"> JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: Jinhua Zhao, Dingyi Zhuang.
   
 # 🎓 Services
-- **Journal Reviewer**: Neurocomputing, TNNLS
-- **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS
+- **Journal Reviewer**: Neurocomputing, TNNLS, npj Artificial Intelligence
+- **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS, AAAI
 
 # 💻 Internships
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
