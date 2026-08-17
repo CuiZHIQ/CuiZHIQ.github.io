@@ -257,9 +257,8 @@ if ($Check -in @("Content", "All")) {
 
     Assert-True (([regex]::Matches($about, 'class="research-experience-item"')).Count -eq 7) "Expected seven Research Experience rows."
     Assert-True (([regex]::Matches($about, 'class="research-experience-logo')).Count -eq 7) "Expected seven large Research Experience logos."
-    foreach ($labLogo in @('images/research-dilab.png', 'images/research-citymind.png')) {
-        Assert-True ($about.Contains($labLogo)) "Missing official laboratory logo: $labLogo"
-    }
+    Assert-True ($about.Contains('href="https://di.ustc.edu.cn/main.htm" aria-label="Data Intelligence Lab website"><img src=''images/ustc.png'' alt="University of Science and Technology of China logo"')) "Data Intelligence Lab row must link its USTC crest to the laboratory website."
+    Assert-True ($about.Contains('href="https://www.citymind.top/" aria-label="CityMind Lab website"><img src=''images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg'' alt="Hong Kong University of Science and Technology logo"')) "CityMind row must link its HKUST school logo to the laboratory website."
     Assert-True ($about.Contains('href="https://trust-agi.github.io/" aria-label="TrustAGI Lab website"><img src=''images/Griffith_University_Logo_Variant_2022.svg'' alt="Griffith University logo"')) "TrustAGI row must link its Griffith logo to the laboratory website."
     Assert-True ($about.Contains('href="https://mobility.mit.edu/" aria-label="MIT JTL Urban Mobility Lab website"><img src=''images/MIT.png'' alt="Massachusetts Institute of Technology logo"')) "MIT row must link its MIT logo to the laboratory website."
     $equalContributionPrefixes = @(

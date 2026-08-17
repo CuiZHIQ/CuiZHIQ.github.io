@@ -299,7 +299,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
     <div class="research-experience-text"><em>2023 - 2024</em>, Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.</div>
   </div>
   <div class="research-experience-item">
-    <a class="research-experience-logo" href="https://di.ustc.edu.cn/main.htm" aria-label="Data Intelligence Lab website"><img src='images/research-dilab.png' alt="Data Intelligence Lab logo"></a>
+    <a class="research-experience-logo" href="https://di.ustc.edu.cn/main.htm" aria-label="Data Intelligence Lab website"><img src='images/ustc.png' alt="University of Science and Technology of China logo"></a>
     <div class="research-experience-text"><em>2024 - 2025</em>, Data Intelligence Laboratory, University of Science and Technology of China. Mentors: <a href="https://continualgoing.github.io/">Binwu Wang</a>, Yang Wang.</div>
   </div>
   <div class="research-experience-item">
@@ -307,7 +307,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
     <div class="research-experience-text"><em>2025 - 2025</em>, TrustAGI Lab, Griffith University. Mentors: <a href="https://mingjin.dev/">Ming Jin</a>, <a href="https://shiruipan.github.io/">Shirui Pan</a>.</div>
   </div>
   <div class="research-experience-item">
-    <a class="research-experience-logo" href="https://www.citymind.top/" aria-label="CityMind Lab website"><img src='images/research-citymind.png' alt="CityMind Lab logo"></a>
+    <a class="research-experience-logo" href="https://www.citymind.top/" aria-label="CityMind Lab website"><img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="Hong Kong University of Science and Technology logo"></a>
     <div class="research-experience-text"><em>2025 - 2026</em>, CityMind Lab, Hong Kong University of Science and Technology (Guangzhou). Mentor: <a href="https://yuxuanliang.com/">Yuxuan Liang</a>.</div>
   </div>
   <div class="research-experience-item">
