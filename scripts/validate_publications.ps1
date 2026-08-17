@@ -123,6 +123,7 @@ function Assert-LocalImageReferences([string]$Markup, [string]$Root) {
 }
 
 if ($Check -in @("Content", "All")) {
+    Assert-True ($about.Contains('I have published over ten papers in leading journals and conferences.')) "About Me must mention the publication record."
     Assert-BalancedTag $about "details"
     Assert-BalancedTag $about "div"
     Assert-BalancedContainerNesting $about
