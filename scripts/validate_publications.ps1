@@ -260,8 +260,8 @@ if ($Check -in @("Content", "All")) {
     foreach ($labLogo in @('images/research-dilab.png', 'images/research-citymind.png')) {
         Assert-True ($about.Contains($labLogo)) "Missing official laboratory logo: $labLogo"
     }
-    Assert-True ($about.Contains('href="https://www.griffith.edu.au/" aria-label="Griffith University website"><img src=''images/Griffith_University_Logo_Variant_2022.svg'' alt="Griffith University logo"')) "TrustAGI row is missing the Griffith University logo and link."
-    Assert-True ($about.Contains('href="https://www.mit.edu/" aria-label="Massachusetts Institute of Technology website"><img src=''images/MIT.png'' alt="Massachusetts Institute of Technology logo"')) "MIT research row is missing the MIT logo and link."
+    Assert-True ($about.Contains('href="https://trust-agi.github.io/" aria-label="TrustAGI Lab website"><img src=''images/Griffith_University_Logo_Variant_2022.svg'' alt="Griffith University logo"')) "TrustAGI row must link its Griffith logo to the laboratory website."
+    Assert-True ($about.Contains('href="https://mobility.mit.edu/" aria-label="MIT JTL Urban Mobility Lab website"><img src=''images/MIT.png'' alt="Massachusetts Institute of Technology logo"')) "MIT row must link its MIT logo to the laboratory website."
     $equalContributionPrefixes = @(
         'Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang',
         '**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang',
