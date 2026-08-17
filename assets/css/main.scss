@@ -40,51 +40,109 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+.publication-section {
+    margin: 1.25rem 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: #f8fafc;
+    overflow: hidden;
+
+    &[open] > .publication-summary {
+        border-bottom-color: #e2e8f0;
+    }
+
+    &[open] > .publication-summary::after {
+        transform: rotate(225deg);
+    }
+}
+
+.publication-summary {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.1rem;
+    border-bottom: 1px solid transparent;
+    color: #0f172a;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    &::-webkit-details-marker { display: none; }
+    &:hover { background: #f1f5f9; }
+    &:focus-visible { outline: 3px solid rgba(37, 99, 235, .35); outline-offset: -3px; }
+    &::after {
+        content: "";
+        width: .55rem;
+        height: .55rem;
+        margin-left: .85rem;
+        border-right: 2px solid #475569;
+        border-bottom: 2px solid #475569;
+        transform: rotate(45deg);
+        transition: transform .2s ease;
+    }
+}
+
+.publication-summary-title { min-width: 0; }
+.publication-count {
+    margin-left: auto;
+    padding: .2rem .65rem;
+    border-radius: 999px;
+    color: #475569;
+    background: #e2e8f0;
+    font-size: .78rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 .paper-box {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+    flex-direction: column;
+    gap: 1rem;
+    margin: .9rem;
+    padding: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, .06);
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
 
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
+    &:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 8px 22px rgba(15, 23, 42, .09);
+        transform: translateY(-1px);
+    }
+
+    .paper-box-image {
         width: 100%;
-        order: 2;
+
+        > div { position: relative; width: 100%; }
         img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #f8fafc;
+            object-fit: contain;
         }
     }
-    
-    .paper-box-text{
+
+    .paper-box-text {
+        min-width: 0;
         max-width: 100%;
-        order: 1;
+        overflow-wrap: anywhere;
+
+        > p:first-child a { color: #0f3d8a; font-size: 1.05rem; font-weight: 700; line-height: 1.35; }
     }
-    
+
     @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
-
+        display: grid;
+        grid-template-columns: minmax(200px, 38%) minmax(0, 1fr);
+        gap: 1.5rem;
+        align-items: center;
+        margin: 1rem 1.25rem;
+        padding: 1.25rem;
     }
-
-
 }
 
 $scroll_offset : 2em;
@@ -98,12 +156,24 @@ h1:before, .anchor:before {
 }
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
     position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+    top: .55rem;
+    left: -.4rem;
+    z-index: 1;
+    padding: .28rem .75rem;
+    border-radius: 0 999px 999px 0;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, .18);
+    font-size: .78rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.badge--accepted { background: #1d4ed8; }
+.badge--preprint { background: #b45309; }
+
+@media (max-width: 480px) {
+    .publication-summary { padding: .9rem; font-size: 1rem; }
+    .publication-count { font-size: .72rem; }
+    .paper-box { margin: .7rem; padding: .85rem; }
 }
