@@ -179,23 +179,35 @@ h1:before, .anchor:before {
 
 .internship-item {
     display: grid;
-    grid-template-columns: 170px minmax(0, 1fr);
+    grid-template-columns: 250px minmax(0, 1fr);
     gap: 1rem;
     align-items: center;
 }
 
 .internship-logo {
     display: flex;
-    width: 170px;
-    height: 64px;
+    width: 250px;
+    height: 90px;
     align-items: center;
     justify-content: center;
 
     img {
         display: block;
-        max-width: 170px;
-        max-height: 64px;
+        max-width: 250px;
+        max-height: 90px;
         object-fit: contain;
+    }
+}
+
+.internship-logo--evolvent {
+    overflow: hidden;
+
+    img {
+        width: 150px;
+        height: 150px;
+        max-width: none;
+        max-height: none;
+        flex: 0 0 auto;
     }
 }
 
@@ -203,6 +215,14 @@ h1:before, .anchor:before {
     min-width: 0;
 
     p { margin: 0; }
+}
+
+.research-logo {
+    width: auto;
+    height: 1.55em;
+    margin: 0 .18em;
+    vertical-align: middle;
+    object-fit: contain;
 }
 
 .news-scroll {
@@ -229,10 +249,17 @@ h1:before, .anchor:before {
     .paper-box { margin: .7rem; padding: .85rem; }
     .internship-item { grid-template-columns: 1fr; gap: .45rem; }
     .internship-logo {
-        width: 140px;
-        height: 52px;
+        width: 210px;
+        height: 76px;
 
-        img { max-width: 140px; max-height: 52px; }
+        img { max-width: 210px; max-height: 76px; }
     }
+    .internship-logo--evolvent img {
+        width: 128px;
+        height: 128px;
+        max-width: none;
+        max-height: none;
+    }
+    .research-logo { height: 1.4em; }
     .news-scroll { max-height: 11rem; }
 }

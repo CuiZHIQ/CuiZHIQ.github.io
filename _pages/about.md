@@ -293,13 +293,13 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC).
 
 # 📖 Research Experiences
-- *2023 - 2024*, <img src='images/ICAR.png' alt="ICAR" style="height: 1em; vertical-align: middle;"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
-- *2024 - 2025*, <img src='images/ustc.png' alt="USTC" style="height: 1em; vertical-align: middle;"> Data Intelligence Laboratory, University of Science and Technology of China. Mentors: Binwu Wang, Yang Wang.
-- *2025 - 2025*, <img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith" style="height: 1em; vertical-align: middle;"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
-- *2025 - 2026*, <img src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST" style="height: 1em; vertical-align: middle;"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
-- *2026 - 2026*, <img src='images/pku.png' alt="PKU" style="height: 1em; vertical-align: middle;"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
-- *2026 - 2026*, <img src='images/tamu.png' alt="TAMU" style="height: 1em; vertical-align: middle;"> SKY Lab, Texas AM University. Mentor: Yu Zhang.
-- *2026 - 2026*, <img src='images/MIT.png' alt="MIT" style="height: 1em; vertical-align: middle;"> JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: Jinhua Zhao, Dingyi Zhuang.
+- *2023 - 2024*, <img class="research-logo" src='images/ICAR.png' alt="ICAR"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
+- *2024 - 2025*, <img class="research-logo" src='images/ustc.png' alt="USTC"> Data Intelligence Laboratory, University of Science and Technology of China. Mentors: Binwu Wang, Yang Wang.
+- *2025 - 2025*, <img class="research-logo" src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
+- *2025 - 2026*, <img class="research-logo" src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
+- *2026 - 2026*, <img class="research-logo" src='images/pku.png' alt="PKU"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
+- *2026 - 2026*, <img class="research-logo" src='images/tamu.png' alt="TAMU"> SKY Lab, Texas AM University. Mentor: Yu Zhang.
+- *2026 - 2026*, <img class="research-logo" src='images/MIT.png' alt="MIT"> JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: Jinhua Zhao, Dingyi Zhuang.
   
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing, TNNLS, npj AI, JBHI, TASL 
@@ -308,16 +308,16 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 # 💻 Internships
 <div class="internship-list">
   <div class="internship-item">
-    <a class="internship-logo" href="https://www.ustciscr.cn/" aria-label="Yangtze River Delta Information Intelligence Innovation Research Institute website">
+    <a class="internship-logo internship-logo--institute" href="https://www.ustciscr.cn/" aria-label="Yangtze River Delta Information Intelligence Innovation Research Institute website">
       <img src='images/yangtze-info-institute.svg' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo">
     </a>
-    <div class="internship-text" markdown="1">*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.</div>
+    <div class="internship-text"><em>2024.06 - 2024.08</em>, Yangtze River Delta Information Intelligence Innovation Research Institute, China.</div>
   </div>
   <div class="internship-item">
-    <a class="internship-logo" href="https://evolvent.co/" aria-label="Evolvent AI website">
+    <a class="internship-logo internship-logo--evolvent" href="https://evolvent.co/" aria-label="Evolvent AI website">
       <img src='images/evolvent-ai.png' alt="Evolvent AI logo">
     </a>
-    <div class="internship-text" markdown="1">*2026.07 - 2026.08*, Evolvent AI.</div>
+    <div class="internship-text"><em>2026.07 - 2026.08</em>, Evolvent AI.</div>
   </div>
 </div>
 

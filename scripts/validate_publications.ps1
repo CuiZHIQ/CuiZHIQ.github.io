@@ -200,8 +200,8 @@ if ($Check -in @("Content", "All")) {
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
-    Assert-True ($about.Contains('*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
-    Assert-True ($about.Contains('*2026.07 - 2026.08*, Evolvent AI.')) "Evolvent AI internship is missing."
+    Assert-True ($about.Contains('<em>2024.06 - 2024.08</em>, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
+    Assert-True ($about.Contains('<em>2026.07 - 2026.08</em>, Evolvent AI.')) "Evolvent AI internship is missing."
     Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
     Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
     Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
@@ -212,6 +212,11 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('src=''images/evolvent-ai.png'' alt="Evolvent AI logo"')) "Evolvent AI logo is missing."
     Assert-True ($about.Contains('href="https://www.ustciscr.cn/"')) "Yangtze institute official link is missing."
     Assert-True ($about.Contains('href="https://evolvent.co/"')) "Evolvent AI official link is missing."
+    Assert-True (-not $about.Contains('class="internship-text" markdown="1"')) "Internship text must use balanced plain HTML instead of inline Kramdown containers."
+    Assert-True (([regex]::Matches($about, 'class="internship-logo internship-logo--')).Count -eq 2) "Expected a logo-specific modifier on both Internship logos."
+    Assert-True ($about.Contains('class="internship-logo internship-logo--institute"')) "Yangtze institute logo modifier is missing."
+    Assert-True ($about.Contains('class="internship-logo internship-logo--evolvent"')) "Evolvent logo modifier is missing."
+    Assert-True (([regex]::Matches($about, 'class="research-logo"')).Count -eq 7) "Expected seven enlarged Research Experiences logos."
     $equalContributionPrefixes = @(
         'Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang',
         '**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang',
@@ -242,7 +247,7 @@ if ($Check -in @("Styles", "All")) {
     Assert-True ($scss.Contains('#1d4ed8')) "Missing accepted-paper blue."
     Assert-True ($scss.Contains('#b45309')) "Missing preprint amber."
     Assert-True ($scss.Contains('@media (max-width: 480px)')) "Missing narrow-mobile breakpoint."
-    foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '170px', '64px', '140px', '52px', 'object-fit: contain')) {
+    foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '.internship-logo--evolvent', '.research-logo', '250px', '90px', '210px', '76px', '1.55em', '1.4em', 'object-fit: contain', 'overflow: hidden')) {
         Assert-True ($scss.Contains($internshipStyle)) "Missing Internship style rule: $internshipStyle"
     }
     foreach ($newsStyle in @('.news-scroll', 'max-height: 14rem', 'overflow-y: auto', 'overscroll-behavior: contain', 'scroll-behavior: smooth', 'prefers-reduced-motion: reduce', 'max-height: 11rem')) {
