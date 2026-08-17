@@ -1,5 +1,5 @@
 param(
-    [ValidateSet("Content", "Styles", "All")]
+    [ValidateSet("Content", "Styles", "Behavior", "All")]
     [string]$Check = "All"
 )
 
@@ -7,8 +7,16 @@ $ErrorActionPreference = "Stop"
 $repoRoot = Split-Path -Parent $PSScriptRoot
 $aboutPath = Join-Path $repoRoot "_pages/about.md"
 $scssPath = Join-Path $repoRoot "assets/css/main.scss"
+$scriptsIncludePath = Join-Path $repoRoot "_includes/scripts.html"
+$newsScriptPath = Join-Path $repoRoot "assets/js/news-scroll.js"
 $about = Get-Content -Raw -LiteralPath $aboutPath
 $scss = Get-Content -Raw -LiteralPath $scssPath
+$scriptsInclude = Get-Content -Raw -LiteralPath $scriptsIncludePath
+$newsScript = if (Test-Path -LiteralPath $newsScriptPath) {
+    Get-Content -Raw -LiteralPath $newsScriptPath
+} else {
+    ""
+}
 $failures = [System.Collections.Generic.List[string]]::new()
 
 function Assert-True([bool]$Condition, [string]$Message) {
@@ -217,6 +225,10 @@ if ($Check -in @("Content", "All")) {
     Assert-True (([regex]::Matches($about, [regex]::Escape('(Project Leader)'))).Count -eq 2) "Expected exactly two Project Leader labels."
     Assert-True (-not $about.Contains('<sup>*</sup> Equal contribution')) "Found the former asterisk equal-contribution note."
     Assert-True (-not $about.Contains('<sup>*</sup>')) "Found the former superscript asterisk author notation."
+    Assert-True (([regex]::Matches($about, 'class="news-scroll"')).Count -eq 1) "Expected exactly one News scroll viewport."
+    Assert-True ($about.Contains('data-news-scroll')) "News viewport is missing its behavior hook."
+    Assert-True ($about.Contains('tabindex="0"')) "News viewport is not keyboard focusable."
+    Assert-True ($about.Contains('aria-label="Latest news"')) "News viewport is missing its accessible label."
     Assert-LocalImageReferences $about $repoRoot
 }
 
@@ -232,6 +244,17 @@ if ($Check -in @("Styles", "All")) {
     Assert-True ($scss.Contains('@media (max-width: 480px)')) "Missing narrow-mobile breakpoint."
     foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '170px', '64px', '140px', '52px', 'object-fit: contain')) {
         Assert-True ($scss.Contains($internshipStyle)) "Missing Internship style rule: $internshipStyle"
+    }
+    foreach ($newsStyle in @('.news-scroll', 'max-height: 14rem', 'overflow-y: auto', 'overscroll-behavior: contain', 'scroll-behavior: smooth', 'prefers-reduced-motion: reduce', 'max-height: 11rem')) {
+        Assert-True ($scss.Contains($newsStyle)) "Missing News style rule: $newsStyle"
+    }
+}
+
+if ($Check -in @("Behavior", "All")) {
+    Assert-True (Test-Path -LiteralPath $newsScriptPath -PathType Leaf) "Missing News behavior script."
+    Assert-True ($scriptsInclude.Contains('<script src="assets/js/news-scroll.js" defer></script>')) "News behavior script is not loaded by the site."
+    foreach ($token in @('data-news-scroll', '4000', '8000', 'prefers-reduced-motion: reduce', 'mouseenter', 'focusin', 'wheel', 'pointerdown', 'scrollTo')) {
+        Assert-True ($newsScript.Contains($token)) "Missing News behavior token: $token"
     }
 }
 

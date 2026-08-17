@@ -28,6 +28,7 @@ My research interests lie at the intersection of AI for Earth Science (AI4Earth)
 Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU). Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
 
 # 🔥 News 
+<div class="news-scroll" data-news-scroll tabindex="0" aria-label="Latest news" markdown="1">
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the KDD Undergraduate Consortium and Travel Grant. See you on the beautiful Jeju Island. Thanks to KDD!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the Association for Computational Linguistics in recognition of exceptional contributions and accomplishments. Thanks to ACL!
 - *2026.05*: &nbsp;🎉🎉 My paper "Uno-Orchestra" was published on arXiv. This work marks my initial exploration into multi-agent reinforcement learning and routing orchestration.
@@ -41,6 +42,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 - *2025.03*: &nbsp;🎉🎉 My work on foundation models for tropical cyclones was accepted by Frontiers of Computer Science. Presented at EGU, AGU, and other meteorology conferences, and received recognition from NASA.
 - *2025.02*: &nbsp;🏆🏆 Won the 3rd place in the ACL LLMSR@ XLLM25 competition. Thanks to Jiahao for the collaboration.
 - *2024.06*: &nbsp;🏆🏆 Received the First-Class Scholarship from Nanjing University of Information Science and Technology (NUIST). 
+</div>
 
 # 📝 Publications 
 
