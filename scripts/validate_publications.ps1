@@ -204,6 +204,19 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('src=''images/evolvent-ai.png'' alt="Evolvent AI logo"')) "Evolvent AI logo is missing."
     Assert-True ($about.Contains('href="https://www.ustciscr.cn/"')) "Yangtze institute official link is missing."
     Assert-True ($about.Contains('href="https://evolvent.co/"')) "Evolvent AI official link is missing."
+    $equalContributionPrefixes = @(
+        'Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang',
+        '**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang',
+        'Tao Yu†, Yifei Qu†, **Zhiqing Cui†** (Project Leader), Pengfei Zhou',
+        'Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang'
+    )
+    foreach ($prefix in $equalContributionPrefixes) {
+        Assert-True ($about.Contains($prefix)) "Missing standardized equal-contribution author line: $prefix"
+    }
+    Assert-True (([regex]::Matches($about, [regex]::Escape('† Equal contribution'))).Count -eq 4) "Expected four equal-contribution notes."
+    Assert-True (([regex]::Matches($about, [regex]::Escape('(Project Leader)'))).Count -eq 2) "Expected exactly two Project Leader labels."
+    Assert-True (-not $about.Contains('<sup>*</sup> Equal contribution')) "Found the former asterisk equal-contribution note."
+    Assert-True (-not $about.Contains('<sup>*</sup>')) "Found the former superscript asterisk author notation."
     Assert-LocalImageReferences $about $repoRoot
 }
 

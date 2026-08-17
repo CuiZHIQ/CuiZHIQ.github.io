@@ -66,9 +66,11 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 [Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting]()
 
-**Jiaming Ma†, Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
+Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
 
 **IJCAI 2025 (Oral)**
+
+† Equal contribution
 </div>
 </div>
 
@@ -80,6 +82,8 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 **Zhiqing Cui†**, Binwu Wang†, Guanjun Wang, Zhengyang Zhou, Fan Meng, Jingjia Luo, Yang Wang
 
 **IEEE Transactions on Knowledge and Data Engineering (TKDE)**
+
+† Equal contribution
 </div>
 </div>
 
@@ -116,9 +120,11 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 [SCOPE-Router: Cost-Aware Open-Set VLM Routing for Execution-Oriented Tasks](https://arxiv.org/abs/2608.12127)
 
-<strong>Tao Yu<sup>*</sup>, Yifei Qu<sup>*</sup>, Zhiqing Cui<sup>*</sup></strong>, Pengfei Zhou, Zhongtian Luo, Yujia Yang, Shenghua Chai, Haopeng Jin, Zhenghao Zhang, Xinming Wang, Hongzhu Yi, Wangbo Zhao, Zhenglin Wan, Yan Huang, Yeshani, Jinwen Luo, Yang You
+Tao Yu†, Yifei Qu†, **Zhiqing Cui†** (Project Leader), Pengfei Zhou, Zhongtian Luo, Yujia Yang, Shenghua Chai, Haopeng Jin, Zhenghao Zhang, Xinming Wang, Hongzhu Yi, Wangbo Zhao, Zhenglin Wan, Yan Huang, Yeshani, Jinwen Luo, Yang You
 
-**arXiv preprint** · <sup>*</sup> Equal contribution
+**arXiv preprint**
+
+† Equal contribution
 </div>
 </div>
 
@@ -137,9 +143,11 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 [PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG]()
 
-**Tao Yu†, Minghui Zhang†, Zhiqing Cui†**, Hao Wang, Zhongtian Luo, Shenghua Chai, Junhao Gong, Yuzhao Peng, Yuxuan Zhou, Yujia Yang, Zhenghao Zhang, Haopeng Jin, Xinming Wang, Yufei Xiong, Jiabing Yang, Jiahao Yuan, Hanqing Wang, Hongzhu Yi, YiFan Zhang, Yan Huang, Liang Wang
+Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhongtian Luo, Shenghua Chai, Junhao Gong, Yuzhao Peng, Yuxuan Zhou, Yujia Yang, Zhenghao Zhang, Haopeng Jin, Xinming Wang, Yufei Xiong, Jiabing Yang, Jiahao Yuan, Hanqing Wang, Hongzhu Yi, YiFan Zhang, Yan Huang, Liang Wang
 
 **arXiv preprint**
+
+† Equal contribution
 </div>
 </div>
 
