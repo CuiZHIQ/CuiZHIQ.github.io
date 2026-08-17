@@ -9,6 +9,7 @@ $aboutPath = Join-Path $repoRoot "_pages/about.md"
 $scssPath = Join-Path $repoRoot "assets/css/main.scss"
 $scriptsIncludePath = Join-Path $repoRoot "_includes/scripts.html"
 $newsScriptPath = Join-Path $repoRoot "assets/js/news-scroll.js"
+$visitorMapPath = Join-Path $repoRoot "_includes/visitor-map.html"
 $about = Get-Content -Raw -LiteralPath $aboutPath
 $scss = Get-Content -Raw -LiteralPath $scssPath
 $scriptsInclude = Get-Content -Raw -LiteralPath $scriptsIncludePath
@@ -17,6 +18,7 @@ $newsScript = if (Test-Path -LiteralPath $newsScriptPath) {
 } else {
     ""
 }
+$visitorMap = Get-Content -Raw -LiteralPath $visitorMapPath
 $failures = [System.Collections.Generic.List[string]]::new()
 
 function Assert-True([bool]$Condition, [string]$Message) {
@@ -278,6 +280,9 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('data-news-scroll')) "News viewport is missing its behavior hook."
     Assert-True ($about.Contains('tabindex="0"')) "News viewport is not keyboard focusable."
     Assert-True ($about.Contains('aria-label="Latest news"')) "News viewport is missing its accessible label."
+    Assert-True ($visitorMap.Contains('class="visitor-map-frame"')) "Visitor map is missing its responsive size wrapper."
+    Assert-True ($visitorMap.Contains('width: min(86%, 680px);')) "Visitor map desktop width must be capped at 680px."
+    Assert-True ($visitorMap.Contains('width: 94%;')) "Visitor map must retain a readable mobile width."
     Assert-LocalImageReferences $about $repoRoot
 }
 

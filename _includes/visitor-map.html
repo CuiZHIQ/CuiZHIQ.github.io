@@ -1,4 +1,16 @@
 <!-- MapMyVisitors Visitor Map -->
-<div style="margin-top: 2em;">
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=K8hlhn03q8PuMR3VWb3ekeedZGdmrfXN6MemOBfMpdw&cl=ffffff&w=a"></script>
+<style>
+  .visitor-map-frame {
+    width: min(86%, 680px);
+    margin: 2em auto 0;
+  }
+
+  @media (max-width: 600px) {
+    .visitor-map-frame {
+      width: 94%;
+    }
+  }
+</style>
+<div class="visitor-map-frame">
+  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=K8hlhn03q8PuMR3VWb3ekeedZGdmrfXN6MemOBfMpdw&cl=ffffff&w=a"></script>
 </div>
