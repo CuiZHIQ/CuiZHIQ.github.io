@@ -127,6 +127,12 @@
         }
     }
 
+    .paper-box-image.paper-box-image--landscape img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: top;
+    }
+
     .paper-box-text {
         min-width: 0;
         max-width: 100%;

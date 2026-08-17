@@ -228,7 +228,7 @@ Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">XLLM 2025</div><img src='images/less-is-more.png' alt="Less is More" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image paper-box-image--landscape'><div><div class="badge badge--accepted">XLLM 2025</div><img src='images/less-is-more-poster.png' alt="Less is More poster" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)

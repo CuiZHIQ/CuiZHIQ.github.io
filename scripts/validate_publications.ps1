@@ -206,7 +206,8 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
     Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
     Assert-True ($about.Contains('class="badge badge--accepted">XLLM 2025</div>')) "Less is More accepted badge is missing."
-    Assert-True ($about.Contains('src=''images/less-is-more.png'' alt="Less is More"')) "Less is More official image is missing."
+    Assert-True ($about.Contains('class=''paper-box-image paper-box-image--landscape''')) "Less is More landscape image container is missing."
+    Assert-True ($about.Contains('src=''images/less-is-more-poster.png'' alt="Less is More poster"')) "Less is More official landscape poster is missing."
     Assert-True (([regex]::Matches($about, 'class="internship-item"')).Count -eq 2) "Expected two branded Internship rows."
     Assert-True ($about.Contains('src=''images/yangtze-info-institute.svg'' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo"')) "Yangtze institute logo is missing."
     Assert-True ($about.Contains('src=''images/evolvent-ai.png'' alt="Evolvent AI logo"')) "Evolvent AI logo is missing."
@@ -252,6 +253,9 @@ if ($Check -in @("Styles", "All")) {
     }
     foreach ($newsStyle in @('.news-scroll', 'max-height: 14rem', 'overflow-y: auto', 'overscroll-behavior: contain', 'scroll-behavior: smooth', 'prefers-reduced-motion: reduce', 'max-height: 11rem')) {
         Assert-True ($scss.Contains($newsStyle)) "Missing News style rule: $newsStyle"
+    }
+    foreach ($landscapeStyle in @('.paper-box-image--landscape', 'aspect-ratio: 16 / 9', 'object-fit: cover', 'object-position: top')) {
+        Assert-True ($scss.Contains($landscapeStyle)) "Missing landscape paper-image style rule: $landscapeStyle"
     }
 }
 
