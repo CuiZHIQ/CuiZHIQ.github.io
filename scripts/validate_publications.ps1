@@ -257,9 +257,11 @@ if ($Check -in @("Content", "All")) {
 
     Assert-True (([regex]::Matches($about, 'class="research-experience-item"')).Count -eq 7) "Expected seven Research Experience rows."
     Assert-True (([regex]::Matches($about, 'class="research-experience-logo')).Count -eq 7) "Expected seven large Research Experience logos."
-    foreach ($labLogo in @('images/research-dilab.png', 'images/research-trustagi.svg', 'images/research-citymind.png', 'images/research-jtl.png')) {
+    foreach ($labLogo in @('images/research-dilab.png', 'images/research-citymind.png')) {
         Assert-True ($about.Contains($labLogo)) "Missing official laboratory logo: $labLogo"
     }
+    Assert-True ($about.Contains('href="https://www.griffith.edu.au/" aria-label="Griffith University website"><img src=''images/Griffith_University_Logo_Variant_2022.svg'' alt="Griffith University logo"')) "TrustAGI row is missing the Griffith University logo and link."
+    Assert-True ($about.Contains('href="https://www.mit.edu/" aria-label="Massachusetts Institute of Technology website"><img src=''images/MIT.png'' alt="Massachusetts Institute of Technology logo"')) "MIT research row is missing the MIT logo and link."
     $equalContributionPrefixes = @(
         'Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang',
         '**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang',

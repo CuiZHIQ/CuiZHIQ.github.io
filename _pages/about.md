@@ -303,7 +303,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
     <div class="research-experience-text"><em>2024 - 2025</em>, Data Intelligence Laboratory, University of Science and Technology of China. Mentors: <a href="https://continualgoing.github.io/">Binwu Wang</a>, Yang Wang.</div>
   </div>
   <div class="research-experience-item">
-    <a class="research-experience-logo" href="https://trust-agi.github.io/" aria-label="TrustAGI Lab website"><img src='images/research-trustagi.svg' alt="TrustAGI Lab logo"></a>
+    <a class="research-experience-logo" href="https://www.griffith.edu.au/" aria-label="Griffith University website"><img src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith University logo"></a>
     <div class="research-experience-text"><em>2025 - 2025</em>, TrustAGI Lab, Griffith University. Mentors: <a href="https://mingjin.dev/">Ming Jin</a>, <a href="https://shiruipan.github.io/">Shirui Pan</a>.</div>
   </div>
   <div class="research-experience-item">
@@ -319,7 +319,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
     <div class="research-experience-text"><em>2026 - 2026</em>, SKY Lab, Texas A&amp;M University. Mentor: <a href="https://engineering.tamu.edu/cse/profiles/zhang-yu.html">Yu Zhang</a>.</div>
   </div>
   <div class="research-experience-item">
-    <a class="research-experience-logo" href="https://mobility.mit.edu/" aria-label="MIT JTL Urban Mobility Lab website"><img src='images/research-jtl.png' alt="MIT JTL Urban Mobility Lab logo"></a>
+    <a class="research-experience-logo" href="https://www.mit.edu/" aria-label="Massachusetts Institute of Technology website"><img src='images/MIT.png' alt="Massachusetts Institute of Technology logo"></a>
     <div class="research-experience-text"><em>2026 - 2026</em>, JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: <a href="https://dusp.mit.edu/people/jinhua-zhao">Jinhua Zhao</a>, <a href="https://mobility.mit.edu/people/dingyi-zhuang/">Dingyi Zhuang</a>.</div>
   </div>
 </div>
