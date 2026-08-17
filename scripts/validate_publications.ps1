@@ -15,22 +15,185 @@ function Assert-True([bool]$Condition, [string]$Message) {
     if (-not $Condition) { $script:failures.Add($Message) }
 }
 
+function Assert-BalancedTag([string]$Markup, [string]$TagName) {
+    $tokens = [regex]::Matches($Markup, "(?i)</?$TagName\b[^>]*>")
+    $depth = 0
+    $openingCount = 0
+    $closingCount = 0
+    $underflow = $false
+
+    foreach ($token in $tokens) {
+        if ($token.Value -like '</*') {
+            $closingCount++
+            if ($depth -eq 0) {
+                $underflow = $true
+            } else {
+                $depth--
+            }
+        } elseif ($token.Value -notmatch '/\s*>$') {
+            $openingCount++
+            $depth++
+        }
+    }
+
+    Assert-True (-not $underflow) "Found a closing <$TagName> tag before its opening tag."
+    Assert-True ($openingCount -eq $closingCount -and $depth -eq 0) "Unbalanced <$TagName> tags: $openingCount opening, $closingCount closing."
+}
+
+function Assert-BalancedContainerNesting([string]$Markup) {
+    $tokens = [regex]::Matches($Markup, '(?i)</?(details|div)\b[^>]*>')
+    $stack = [System.Collections.Generic.List[string]]::new()
+
+    foreach ($token in $tokens) {
+        $name = ([regex]::Match($token.Value, '(?i)(details|div)')).Value.ToLowerInvariant()
+        if ($token.Value -like '</*') {
+            if ($stack.Count -eq 0) {
+                Assert-True $false "Found a closing <$name> tag without an open container."
+            } elseif ($stack[$stack.Count - 1] -ne $name) {
+                Assert-True $false "Container nesting mismatch: expected </$($stack[$stack.Count - 1])> before </$name>."
+                $stack.RemoveAt($stack.Count - 1)
+            } else {
+                $stack.RemoveAt($stack.Count - 1)
+            }
+        } elseif ($token.Value -notmatch '/\s*>$') {
+            $stack.Add($name)
+        }
+    }
+
+    Assert-True ($stack.Count -eq 0) "Unclosed container tags remain: $($stack -join ', ')."
+}
+
+function Assert-LocalImageReferences([string]$Markup, [string]$Root) {
+    $imagePattern = '<img\b[^>]*\bsrc\s*=\s*(?:"(?<doubleSrc>[^"]+)"|''(?<singleSrc>[^'']+)'')'
+    $imageMatches = [regex]::Matches($Markup, $imagePattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
+    $srcAttributeMatches = [regex]::Matches($Markup, '(?i)<img\b[^>]*\bsrc\s*=')
+    Assert-True ($imageMatches.Count -eq $srcAttributeMatches.Count) "Could not parse every local image src attribute."
+
+    $imageFiles = [System.Collections.Generic.Dictionary[string, string]]::new([System.StringComparer]::Ordinal)
+    if (Test-Path -LiteralPath $Root -PathType Container) {
+        foreach ($file in Get-ChildItem -LiteralPath $Root -File -Recurse) {
+            $relativePath = [System.IO.Path]::GetRelativePath($Root, $file.FullName).Replace('\', '/')
+            if (-not $imageFiles.ContainsKey($relativePath)) {
+                $imageFiles.Add($relativePath, $file.FullName)
+            }
+        }
+    } else {
+        Assert-True $false "Missing repository root."
+    }
+
+    $localReferenceCount = 0
+    foreach ($match in $imageMatches) {
+        $source = if ($match.Groups['doubleSrc'].Success) {
+            $match.Groups['doubleSrc'].Value
+        } else {
+            $match.Groups['singleSrc'].Value
+        }
+
+        # Protocol and protocol-relative URLs are not repository-local assets.
+        if ($source -match '^(?:[A-Za-z][A-Za-z0-9+.-]*:|//)') { continue }
+
+        $localReferenceCount++
+        $normalizedSource = ($source -split '[?#]', 2)[0].Replace('\', '/')
+        while ($normalizedSource.StartsWith('./', [System.StringComparison]::Ordinal)) {
+            $normalizedSource = $normalizedSource.Substring(2)
+        }
+        $normalizedSource = $normalizedSource.TrimStart('/')
+        try {
+            $normalizedSource = [System.Uri]::UnescapeDataString($normalizedSource)
+        } catch {
+            Assert-True $false "Invalid URL encoding in local image: $source"
+            continue
+        }
+
+        # Ordinal dictionary lookup preserves case sensitivity even on Windows.
+        Assert-True ($imageFiles.ContainsKey($normalizedSource)) "Missing or case-mismatched local image: $source"
+    }
+
+    Assert-True ($localReferenceCount -gt 0) "Expected at least one local image reference."
+}
+
 if ($Check -in @("Content", "All")) {
-    Assert-True (([regex]::Matches($about, '<details class="publication-section"')).Count -eq 4) "Expected four publication sections."
-    Assert-True (([regex]::Matches($about, '<details class="publication-section" open markdown="1">')).Count -eq 1) "Expected exactly one default-open section."
+    Assert-BalancedTag $about "details"
+    Assert-BalancedTag $about "div"
+    Assert-BalancedContainerNesting $about
+
+    $detailMatches = [regex]::Matches($about, '(?s)<details\b(?<attrs>[^>]*)>(?<body>.*?)</details\s*>')
+    Assert-True ($detailMatches.Count -eq 4) "Expected four details elements."
+
+    $publicationSections = [System.Collections.Generic.List[object]]::new()
+    foreach ($detailMatch in $detailMatches) {
+        $attrs = $detailMatch.Groups['attrs'].Value
+        if ($attrs -notmatch '(?:^|\s)class="publication-section"(?:\s|$)') { continue }
+
+        $body = $detailMatch.Groups['body'].Value
+        $summaryMatches = [regex]::Matches($body, '(?s)<summary\b[^>]*class="publication-summary"[^>]*>(?<summaryBody>.*?)</summary\s*>')
+        Assert-True ($summaryMatches.Count -eq 1) "Each publication section must contain exactly one publication summary."
+
+        $title = ""
+        $displayCount = -1
+        if ($summaryMatches.Count -eq 1) {
+            $summaryBody = $summaryMatches[0].Groups['summaryBody'].Value
+            $titleMatches = [regex]::Matches($summaryBody, '<span\b[^>]*class="publication-summary-title"[^>]*>(?<title>[^<]*)</span\s*>')
+            $countMatches = [regex]::Matches($summaryBody, '<span\b[^>]*class="publication-count"[^>]*>(?<count>\d+) papers</span\s*>')
+            Assert-True ($titleMatches.Count -eq 1) "Each publication summary must contain exactly one title."
+            Assert-True ($countMatches.Count -eq 1) "Each publication summary must contain exactly one paper count."
+            if ($titleMatches.Count -eq 1) { $title = $titleMatches[0].Groups['title'].Value.Trim() }
+            if ($countMatches.Count -eq 1) { $displayCount = [int]$countMatches[0].Groups['count'].Value }
+        }
+
+        $acceptedCount = ([regex]::Matches($body, 'class="badge badge--accepted"')).Count
+        $preprintCount = ([regex]::Matches($body, 'class="badge badge--preprint"')).Count
+        $paperCount = ([regex]::Matches($body, 'class=[''"]paper-box[''"]')).Count
+        Assert-True (($acceptedCount + $preprintCount) -eq $paperCount) "Every paper card in '$title' must have exactly one classified badge."
+
+        $publicationSections.Add([pscustomobject]@{
+            Title = $title
+            DisplayCount = $displayCount
+            PaperCount = $paperCount
+            AcceptedCount = $acceptedCount
+            PreprintCount = $preprintCount
+            IsOpen = ($attrs -match '(^|\s)open(?:\s|$)')
+        })
+    }
+
+    Assert-True ($publicationSections.Count -eq 4) "Expected four publication-section disclosures."
     Assert-True (([regex]::Matches($about, 'class="publication-summary"')).Count -eq 4) "Expected four publication summaries."
-    Assert-True (([regex]::Matches($about, "class='paper-box'")).Count -eq 17) "Expected 17 paper cards."
-    Assert-True (([regex]::Matches($about, 'badge badge--accepted')).Count -eq 10) "Expected 10 accepted badges."
-    Assert-True (([regex]::Matches($about, 'badge badge--preprint')).Count -eq 7) "Expected seven preprint badges."
-    Assert-True (([regex]::Matches($about, '<span class="publication-count">5 papers</span>')).Count -eq 2) "Expected two five-paper counts."
-    Assert-True ($about.Contains('<span class="publication-count">4 papers</span>')) "Missing four-paper count."
-    Assert-True ($about.Contains('<span class="publication-count">3 papers</span>')) "Missing three-paper count."
+    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 17) "Expected 17 paper cards."
+
+    $expectedSections = @(
+        @{ Title = 'First-Author Accepted Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $true },
+        @{ Title = 'First-Author Preprints'; Papers = 4; Accepted = 0; Preprint = 4; Open = $false },
+        @{ Title = 'Co-Authored Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $false },
+        @{ Title = 'preprint Papers'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false }
+    )
+
+    foreach ($expected in $expectedSections) {
+        $matches = @($publicationSections | Where-Object { $_.Title -eq $expected.Title })
+        Assert-True ($matches.Count -eq 1) "Expected exactly one publication section named '$($expected.Title)'."
+        if ($matches.Count -eq 1) {
+            $section = $matches[0]
+            Assert-True ($section.DisplayCount -eq $expected.Papers) "Section '$($expected.Title)' has the wrong displayed paper count."
+            Assert-True ($section.PaperCount -eq $expected.Papers) "Section '$($expected.Title)' has the wrong number of paper cards."
+            Assert-True ($section.AcceptedCount -eq $expected.Accepted) "Section '$($expected.Title)' has the wrong accepted-badge distribution."
+            Assert-True ($section.PreprintCount -eq $expected.Preprint) "Section '$($expected.Title)' has the wrong preprint-badge distribution."
+            Assert-True ($section.IsOpen -eq $expected.Open) "Section '$($expected.Title)' has the wrong open state."
+        }
+    }
+
+    $expectedTitles = @($expectedSections | ForEach-Object { $_.Title })
+    foreach ($section in $publicationSections) {
+        Assert-True ($expectedTitles -contains $section.Title) "Unexpected publication section: '$($section.Title)'."
+    }
+    $openSections = @($publicationSections | Where-Object { $_.IsOpen })
+    Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
+
+    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 10) "Expected 10 accepted badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 7) "Expected seven preprint badges."
+    Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
     Assert-True ($about.Contains('- *2026.07 - 2026.08*, Evolvent AI.')) "Evolvent AI internship is missing."
-    foreach ($image in @('images/scope-router.png', 'images/dag.png', 'images/omni-deepsearch.png', 'images/videoafford.png')) {
-        Assert-True (Test-Path -LiteralPath (Join-Path $repoRoot $image)) "Missing image: $image"
-    }
+    Assert-LocalImageReferences $about $repoRoot
 }
 
 if ($Check -in @("Styles", "All")) {
