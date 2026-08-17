@@ -80,10 +80,10 @@ Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured 
 Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
 Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
 Assert-True ($about.Contains('class="badge badge--accepted">XLLM 2025</div>')) "Less is More accepted badge is missing."
-Assert-True ($about.Contains("src='images/less-is-more.png' alt=\"Less is More\"")) "Less is More official image is missing."
+Assert-True ($about.Contains('src=''images/less-is-more.png'' alt="Less is More"')) "Less is More official image is missing."
 Assert-True (([regex]::Matches($about, 'class="internship-item"')).Count -eq 2) "Expected two branded Internship rows."
-Assert-True ($about.Contains("src='images/yangtze-info-institute.svg' alt=\"Yangtze River Delta Information Intelligence Innovation Research Institute logo\"")) "Yangtze institute logo is missing."
-Assert-True ($about.Contains("src='images/evolvent-ai.png' alt=\"Evolvent AI logo\"")) "Evolvent AI logo is missing."
+Assert-True ($about.Contains('src=''images/yangtze-info-institute.svg'' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo"')) "Yangtze institute logo is missing."
+Assert-True ($about.Contains('src=''images/evolvent-ai.png'' alt="Evolvent AI logo"')) "Evolvent AI logo is missing."
 Assert-True ($about.Contains('href="https://www.ustciscr.cn/"')) "Yangtze institute official link is missing."
 Assert-True ($about.Contains('href="https://evolvent.co/"')) "Evolvent AI official link is missing."
 ```
