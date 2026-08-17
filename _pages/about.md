@@ -25,7 +25,7 @@ Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degre
 My research interests lie at the intersection of AI for Earth Science (AI4Earth), spatiotemporal data mining, and the reasoning, scheduling, and memory capabilities of LLM agents. I am dedicated to applying these techniques, along with multimodal reasoning, to large-scale real-world scenarios like air pollution management, ultimately aiming to deepen our understanding of the Earth's environment.
 
 # 🔍 Research Topics
-Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU) and Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents. Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
+Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU). Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
 
 # 🔥 News 
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the KDD Undergraduate Consortium and Travel Grant. See you on the beautiful Jeju Island. Thanks to KDD!
@@ -44,9 +44,13 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 # 📝 Publications 
 
-## First-Author Accepted Papers
+<details class="publication-section" open markdown="1">
+<summary class="publication-summary">
+  <span class="publication-summary-title">First-Author Accepted Papers</span>
+  <span class="publication-count">5 papers</span>
+</summary>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2026</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACL 2026</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
@@ -57,7 +61,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2025</div><img src='images/CauAir.png' alt="CauAir" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">IJCAI 2025</div><img src='images/CauAir.png' alt="CauAir" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting]()
@@ -68,7 +72,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TKDE</div><img src='images/madgcn.png' alt="MADGCN" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">IEEE TKDE</div><img src='images/madgcn.png' alt="MADGCN" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting]()
@@ -79,7 +83,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation]()
 
@@ -89,7 +93,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Frontiers of Computer Science</div><img src='images/TC.png' alt="Prithvi-TC" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">Frontiers of Computer Science</div><img src='images/TC.png' alt="Prithvi-TC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC]()
@@ -100,8 +104,25 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-## First-Author Preprints
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/uno.png' alt="Uno-Orchestra" width="100%"></div></div>
+</details>
+
+<details class="publication-section" markdown="1">
+<summary class="publication-summary">
+  <span class="publication-summary-title">First-Author Preprints</span>
+  <span class="publication-count">4 papers</span>
+</summary>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/scope-router.png' alt="SCOPE-Router" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SCOPE-Router: Cost-Aware Open-Set VLM Routing for Execution-Oriented Tasks](https://arxiv.org/abs/2608.12127)
+
+<strong>Tao Yu<sup>*</sup>, Yifei Qu<sup>*</sup>, Zhiqing Cui<sup>*</sup></strong>, Pengfei Zhou, Zhongtian Luo, Yujia Yang, Shenghua Chai, Haopeng Jin, Zhenghao Zhang, Xinming Wang, Hongzhu Yi, Wangbo Zhao, Zhenglin Wan, Yan Huang, Yeshani, Jinwen Luo, Yang You
+
+**arXiv preprint** · <sup>*</sup> Equal contribution
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/uno.png' alt="Uno-Orchestra" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation]()
@@ -111,7 +132,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/paperx.png' alt="paperx" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/paperx.png' alt="paperx" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG]()
@@ -122,7 +143,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting]()
@@ -134,9 +155,26 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 </div>
 </div>
 
-## Co-Authored Papers
+</details>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2026</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
+<details class="publication-section" markdown="1">
+<summary class="publication-summary">
+  <span class="publication-summary-title">Co-Authored Papers</span>
+  <span class="publication-count">5 papers</span>
+</summary>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ECCV 2026</div><img src='images/dag.png' alt="Diffusion Models are Open-World Affordance Learners" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Diffusion Models are Open-World Affordance Learners: Leveraging Generative Priors for 3D Affordance Learning](https://arxiv.org/abs/2508.01651)
+
+Hanqing Wang, Zhenhao Zhang, Kaiyang Ji, Mingyu Liu, Wenti Yin, Yuchao Chen, Zhirui Liu, Xiangyu Zeng, Tianxiang Gui, Hangxing Zhang, Jiahao Yuan, **Zhiqing Cui**, Jiaxin Liu, Zhiyuan Ma, Hui Xiong
+
+**ECCV 2026**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ICML 2026</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
@@ -147,7 +185,7 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025</div><img src='images/Reflect.png' alt="ReflectDiffu" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACL 2025</div><img src='images/Reflect.png' alt="ReflectDiffu" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via a RL-Diffusion Framework]()
@@ -158,7 +196,7 @@ Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">WWW 2026</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning]()
@@ -169,7 +207,7 @@ Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman N
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2026</div><img src='images/Affor.png' alt="Affordance-R1" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">AAAI 2026</div><img src='images/Affor.png' alt="Affordance-R1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model]()
@@ -180,8 +218,36 @@ Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cu
 </div>
 </div>
 
-## preprint Papers
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
+</details>
+
+<details class="publication-section" markdown="1">
+<summary class="publication-summary">
+  <span class="publication-summary-title">preprint Papers</span>
+  <span class="publication-count">3 papers</span>
+</summary>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/omni-deepsearch.png' alt="Omni-DeepSearch" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Omni-DeepSearch: A Benchmark for Audio-Driven Omni-Modal Deep Search](https://arxiv.org/abs/2605.08762)
+
+Tao Yu, Yiming Ding, Shenghua Chai, Minghui Zhang, Zhongtian Luo, Xinming Wang, Xinlong Chen, Zhaolu Kang, Junhao Gong, Yuxuan Zhou, Haopeng Jin, **Zhiqing Cui**, Jiabing Yang, YiFan Zhang, Hongzhu Yi, Zheqi He, Xi Yang, Yan Huang, Liang Wang
+
+**arXiv preprint**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/videoafford.png' alt="VideoAfford" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[VideoAfford: Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://arxiv.org/abs/2602.09638)
+
+Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuhao Liu, **Zhiqing Cui**, Jiahao Yuan, Lu Dai, Zhiyuan Ma, Hui Xiong
+
+**arXiv preprint**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models]()
@@ -191,6 +257,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 </div>
 </div>
 
+</details>
 
 
 # 🎖 Honors and Awards
@@ -219,6 +286,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 
 # 💻 Internships
 - *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
+- *2026.07 - 2026.08*, Evolvent AI.
 
 # 👥 Visitors
 {% include visitor-map.html %}
