@@ -199,7 +199,7 @@ if ($Check -in @("Content", "All")) {
     Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 7) "Expected seven preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
-    Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
+    Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
     Assert-True ($about.Contains('<em>2024.06 - 2024.08</em>, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
     Assert-True ($about.Contains('<em>2026.07 - 2026.08</em>, Evolvent AI.')) "Evolvent AI internship is missing."
     Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
@@ -218,7 +218,48 @@ if ($Check -in @("Content", "All")) {
     Assert-True (([regex]::Matches($about, 'class="internship-logo internship-logo--')).Count -eq 2) "Expected a logo-specific modifier on both Internship logos."
     Assert-True ($about.Contains('class="internship-logo internship-logo--institute"')) "Yangtze institute logo modifier is missing."
     Assert-True ($about.Contains('class="internship-logo internship-logo--evolvent"')) "Evolvent logo modifier is missing."
-    Assert-True (([regex]::Matches($about, 'class="research-logo"')).Count -eq 7) "Expected seven enlarged Research Experiences logos."
+    Assert-True (-not [regex]::IsMatch($about, '\[[^\]]+\]\(\)')) "Found an empty Markdown link."
+    Assert-True (-not $about.Contains('](https://github.com)')) "Found a placeholder GitHub homepage link."
+
+    $expectedPaperLinks = @(
+        '[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models](https://arxiv.org/abs/2510.07858)',
+        '[Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting](https://doi.org/10.24963/ijcai.2025/353)',
+        '[MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting](https://doi.org/10.1109/TKDE.2026.3692204)',
+        '[Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation](https://arxiv.org/abs/2504.09479)',
+        '[Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC](https://doi.org/10.1007/s11704-025-41268-6)',
+        '[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation](https://arxiv.org/abs/2605.05007)',
+        '[PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG](https://arxiv.org/abs/2602.03866)',
+        '[Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting](https://arxiv.org/abs/2601.21899)',
+        '[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting](https://arxiv.org/abs/2601.21726)',
+        '[ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via a RL-Diffusion Framework](https://aclanthology.org/2025.acl-long.1235/)',
+        '[Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning](https://arxiv.org/abs/2512.01282)',
+        '[Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model](https://arxiv.org/abs/2508.06206)',
+        '[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models](https://arxiv.org/abs/2601.02968)'
+    )
+    foreach ($paperLink in $expectedPaperLinks) {
+        Assert-True ($about.Contains($paperLink)) "Missing verified paper link: $paperLink"
+    }
+
+    $expectedPeopleLinks = @(
+        '[Binwu Wang](https://continualgoing.github.io/)',
+        '[Yuxuan Liang](https://yuxuanliang.com/)',
+        '[Jiahao Yuan](https://jhcircle.github.io/)',
+        '[Yu Zhang](https://engineering.tamu.edu/cse/profiles/zhang-yu.html)',
+        '[Jinhua Zhao](https://dusp.mit.edu/people/jinhua-zhao)',
+        '[Dingyi Zhuang](https://mobility.mit.edu/people/dingyi-zhuang/)',
+        '<a href="https://mingjin.dev/">Ming Jin</a>',
+        '<a href="https://shiruipan.github.io/">Shirui Pan</a>',
+        '<a href="https://zwt233.github.io/">Wentao Zhang</a>'
+    )
+    foreach ($peopleLink in $expectedPeopleLinks) {
+        Assert-True ($about.Contains($peopleLink)) "Missing verified person homepage: $peopleLink"
+    }
+
+    Assert-True (([regex]::Matches($about, 'class="research-experience-item"')).Count -eq 7) "Expected seven Research Experience rows."
+    Assert-True (([regex]::Matches($about, 'class="research-experience-logo')).Count -eq 7) "Expected seven large Research Experience logos."
+    foreach ($labLogo in @('images/research-dilab.png', 'images/research-trustagi.svg', 'images/research-citymind.png', 'images/research-jtl.png')) {
+        Assert-True ($about.Contains($labLogo)) "Missing official laboratory logo: $labLogo"
+    }
     $equalContributionPrefixes = @(
         'Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang',
         '**Zhiqing Cui†**, Binwu Wang†, Guanjun Wang',
@@ -249,7 +290,7 @@ if ($Check -in @("Styles", "All")) {
     Assert-True ($scss.Contains('#1d4ed8')) "Missing accepted-paper blue."
     Assert-True ($scss.Contains('#b45309')) "Missing preprint amber."
     Assert-True ($scss.Contains('@media (max-width: 480px)')) "Missing narrow-mobile breakpoint."
-    foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '.internship-logo--evolvent', '.research-logo', '250px', '90px', '210px', '76px', '1.55em', '1.4em', 'object-fit: contain', 'overflow: hidden')) {
+    foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '.internship-logo--evolvent', '250px', '90px', '210px', '76px', 'object-fit: contain', 'overflow: hidden')) {
         Assert-True ($scss.Contains($internshipStyle)) "Missing Internship style rule: $internshipStyle"
     }
     foreach ($newsStyle in @('.news-scroll', 'max-height: 14rem', 'overflow-y: auto', 'overscroll-behavior: contain', 'scroll-behavior: smooth', 'prefers-reduced-motion: reduce', 'max-height: 11rem')) {
@@ -257,6 +298,9 @@ if ($Check -in @("Styles", "All")) {
     }
     foreach ($landscapeStyle in @('.paper-box-image--landscape', 'aspect-ratio: 16 / 9', 'object-fit: cover', 'object-position: top')) {
         Assert-True ($scss.Contains($landscapeStyle)) "Missing landscape paper-image style rule: $landscapeStyle"
+    }
+    foreach ($researchStyle in @('.research-experience-list', '.research-experience-item', '.research-experience-logo', 'grid-template-columns: 250px minmax(0, 1fr)', 'width: 250px', 'height: 90px', 'width: 210px', 'height: 76px')) {
+        Assert-True ($scss.Contains($researchStyle)) "Missing Research Experience style rule: $researchStyle"
     }
 }
 

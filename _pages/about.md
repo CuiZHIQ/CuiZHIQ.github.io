@@ -25,7 +25,7 @@ Hello! I am a third-year undergraduate student (2023-2027) pursuing a dual degre
 My research interests lie at the intersection of AI for Earth Science (AI4Earth), spatiotemporal data mining, and the reasoning, scheduling, and memory capabilities of LLM agents. I am dedicated to applying these techniques, along with multimodal reasoning, to large-scale real-world scenarios like air pollution management, ultimately aiming to deepen our understanding of the Earth's environment.
 
 # 🔍 Research Topics
-Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://github.com) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://github.com), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU). Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://github.com) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://github.com) and [Dingyi Zhuang](https://github.com).
+Over the past year, I worked on spatiotemporal data mining with Assistant Professor [Binwu Wang](https://continualgoing.github.io/) at USTC, resulting in multiple publications. Following this, I was a visiting intern at HKUST(GZ) under Assistant Professor [Yuxuan Liang](https://yuxuanliang.com/), focusing on causal data relationships and deploying large-model reasoning in real-world settings. Driven by my interest in LLM agent reasoning, I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU). Currently, I am an intern at Texas AM University working with Professor [Yu Zhang](https://engineering.tamu.edu/cse/profiles/zhang-yu.html) in LLM Agents. Furthermore, I am honored to participate in a summer research program at MIT, supervised by Professor [Jinhua Zhao](https://dusp.mit.edu/people/jinhua-zhao) and [Dingyi Zhuang](https://mobility.mit.edu/people/dingyi-zhuang/).
 
 # 🔥 News 
 <div class="news-scroll" data-news-scroll tabindex="0" aria-label="Latest news" markdown="1">
@@ -55,7 +55,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACL 2026</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models]()
+[Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models](https://arxiv.org/abs/2510.07858)
 
 **Zhiqing Cui**, Binwu Wang, Qingxiang Liu, Yeqiang Wang, Zhengyang Zhou, Yuxuan Liang, Yang Wang
 
@@ -66,7 +66,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">IJCAI 2025</div><img src='images/CauAir.png' alt="CauAir" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting]()
+[Causal Learning Meet Covariates: Empowering Lightweight and Effective Nationwide Air Quality Forecasting](https://doi.org/10.24963/ijcai.2025/353)
 
 Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe Zhao, Yang Wang
 
@@ -79,7 +79,7 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">IEEE TKDE</div><img src='images/madgcn.png' alt="MADGCN" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting]()
+[MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting](https://doi.org/10.1109/TKDE.2026.3692204)
 
 **Zhiqing Cui†**, Binwu Wang†, Guanjun Wang, Zhengyang Zhou, Fan Meng, Jingjia Luo, Yang Wang
 
@@ -91,7 +91,7 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACM MM 2025</div><img src='images/Dwt.png' alt="Draw with Thought" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation]()
+[Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation](https://arxiv.org/abs/2504.09479)
 
 **Zhiqing Cui**, Jiahao Yuan, Hanqing Wang, Yanshu Li, Chenxu Du, Zhenglong Ding
 
@@ -102,7 +102,7 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">Frontiers of Computer Science</div><img src='images/TC.png' alt="Prithvi-TC" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC]()
+[Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC](https://doi.org/10.1007/s11704-025-41268-6)
 
 **Zhiqing Cui**, Fan Meng, Jingjia Luo
 
@@ -133,7 +133,7 @@ Tao Yu†, Yifei Qu†, **Zhiqing Cui†** (Project Leader), Pengfei Zhou, Zhong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/uno.png' alt="Uno-Orchestra" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation]()
+[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation](https://arxiv.org/abs/2605.05007)
 
 **Zhiqing Cui**, Haotong Xie, Jiahao Yuan, Cheng Yang, Hanqing Wang, Yuxin Wu, Yifan Wu, Siru Zhong, Tao Yu, Yifu Guo, Siyu Zhang, Xinlei Yu, Qibing Ren, Usman Naseem
 
@@ -143,7 +143,7 @@ Tao Yu†, Yifei Qu†, **Zhiqing Cui†** (Project Leader), Pengfei Zhou, Zhong
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/paperx.png' alt="paperx" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG]()
+[PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG](https://arxiv.org/abs/2602.03866)
 
 Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhongtian Luo, Shenghua Chai, Junhao Gong, Yuzhao Peng, Yuxuan Zhou, Yujia Yang, Zhenghao Zhang, Haopeng Jin, Xinming Wang, Yufei Xiong, Jiabing Yang, Jiahao Yuan, Hanqing Wang, Hongzhu Yi, YiFan Zhang, Yan Huang, Liang Wang
 
@@ -156,7 +156,7 @@ Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhon
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/connect.png' alt="Regional Barrier" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting]()
+[Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting](https://arxiv.org/abs/2601.21899)
 
 **Zhiqing Cui**, Siru Zhong, Ming Jin, Shirui Pan, Qingsong Wen, Yuxuan Liang
 
@@ -187,7 +187,7 @@ Hanqing Wang, Zhenhao Zhang, Kaiyang Ji, Mingyu Liu, Wenti Yin, Yuchao Chen, Zhi
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ICML 2026</div><img src='images/drop.png' alt="DropoutTS" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting]()
+[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting](https://arxiv.org/abs/2601.21726)
 
 Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxuan Liang
 
@@ -198,7 +198,7 @@ Siru Zhong, Yiqiu Liu, **Zhiqing Cui**, Zezhi Shao, Fei Wang, Qingsong Wen, Yuxu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACL 2025</div><img src='images/Reflect.png' alt="ReflectDiffu" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via a RL-Diffusion Framework]()
+[ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via a RL-Diffusion Framework](https://aclanthology.org/2025.acl-long.1235/)
 
 Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 
@@ -209,7 +209,7 @@ Jiahao Yuan, Zixiang Di, **Zhiqing Cui**, Guisong Yang, Usman Naseem
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">WWW 2026</div><img src='images/Kardia.png' alt="Kardia-R1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning]()
+[Kardia-R1: Unleashing LLMs to Reason toward Understanding and Empathy for Emotional Support via Rubric-as-Judge Reinforcement Learning](https://arxiv.org/abs/2512.01282)
 
 Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman Naseem
 
@@ -220,7 +220,7 @@ Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman N
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">AAAI 2026</div><img src='images/Affor.png' alt="Affordance-R1" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model]()
+[Affordance-R1: Reinforcement Learning for Generalizable Affordance Reasoning in Multimodal Large Language Model](https://arxiv.org/abs/2508.06206)
 
 Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cui**, Jiahao Yuan, Yifan Han, Mingyu Liu, Yuexin Ma
 
@@ -271,7 +271,7 @@ Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuh
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models]()
+[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models](https://arxiv.org/abs/2601.02968)
 
 Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu Wan, Sheng Sun, Lvchun Wang, Wei Yu, Yuxuan Liang
 
@@ -293,14 +293,37 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - *2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC).
 
 # 📖 Research Experiences
-- *2023 - 2024*, <img class="research-logo" src='images/ICAR.png' alt="ICAR"> Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.
-- *2024 - 2025*, <img class="research-logo" src='images/ustc.png' alt="USTC"> Data Intelligence Laboratory, University of Science and Technology of China. Mentors: Binwu Wang, Yang Wang.
-- *2025 - 2025*, <img class="research-logo" src='images/Griffith_University_Logo_Variant_2022.svg' alt="Griffith"> TrustAGI Lab, Griffith University. Mentors: Ming Jin, Shirui Pan.
-- *2025 - 2026*, <img class="research-logo" src='images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg' alt="HKUST"> CityMind Lab, Hong Kong University of Science and Technology(Guang Zhou). Mentor: Yuxuan Liang.
-- *2026 - 2026*, <img class="research-logo" src='images/pku.png' alt="PKU"> PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: Wentao Zhang.
-- *2026 - 2026*, <img class="research-logo" src='images/tamu.png' alt="TAMU"> SKY Lab, Texas AM University. Mentor: Yu Zhang.
-- *2026 - 2026*, <img class="research-logo" src='images/MIT.png' alt="MIT"> JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: Jinhua Zhao, Dingyi Zhuang.
-  
+<div class="research-experience-list">
+  <div class="research-experience-item">
+    <div class="research-experience-logo"><img src='images/ICAR.png' alt="ICAR logo"></div>
+    <div class="research-experience-text"><em>2023 - 2024</em>, Institute of Climate and Application Frontier Research (ICAR), Nanjing University of Information Science and Technology. Mentor: Jingjia Luo.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://di.ustc.edu.cn/main.htm" aria-label="Data Intelligence Lab website"><img src='images/research-dilab.png' alt="Data Intelligence Lab logo"></a>
+    <div class="research-experience-text"><em>2024 - 2025</em>, Data Intelligence Laboratory, University of Science and Technology of China. Mentors: <a href="https://continualgoing.github.io/">Binwu Wang</a>, Yang Wang.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://trust-agi.github.io/" aria-label="TrustAGI Lab website"><img src='images/research-trustagi.svg' alt="TrustAGI Lab logo"></a>
+    <div class="research-experience-text"><em>2025 - 2025</em>, TrustAGI Lab, Griffith University. Mentors: <a href="https://mingjin.dev/">Ming Jin</a>, <a href="https://shiruipan.github.io/">Shirui Pan</a>.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://www.citymind.top/" aria-label="CityMind Lab website"><img src='images/research-citymind.png' alt="CityMind Lab logo"></a>
+    <div class="research-experience-text"><em>2025 - 2026</em>, CityMind Lab, Hong Kong University of Science and Technology (Guangzhou). Mentor: <a href="https://yuxuanliang.com/">Yuxuan Liang</a>.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://zwt233.github.io/" aria-label="PKU Data-Centric AI Group website"><img src='images/pku.png' alt="Peking University logo"></a>
+    <div class="research-experience-text"><em>2026 - 2026</em>, PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: <a href="https://zwt233.github.io/">Wentao Zhang</a>.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://engineering.tamu.edu/cse/profiles/zhang-yu.html" aria-label="Yu Zhang at Texas A&amp;M University"><img src='images/tamu.png' alt="Texas A&amp;M University logo"></a>
+    <div class="research-experience-text"><em>2026 - 2026</em>, SKY Lab, Texas A&amp;M University. Mentor: <a href="https://engineering.tamu.edu/cse/profiles/zhang-yu.html">Yu Zhang</a>.</div>
+  </div>
+  <div class="research-experience-item">
+    <a class="research-experience-logo" href="https://mobility.mit.edu/" aria-label="MIT JTL Urban Mobility Lab website"><img src='images/research-jtl.png' alt="MIT JTL Urban Mobility Lab logo"></a>
+    <div class="research-experience-text"><em>2026 - 2026</em>, JTL Transit Lab, UrbanAI Lab, Massachusetts Institute of Technology. Mentors: <a href="https://dusp.mit.edu/people/jinhua-zhao">Jinhua Zhao</a>, <a href="https://mobility.mit.edu/people/dingyi-zhuang/">Dingyi Zhuang</a>.</div>
+  </div>
+</div>
+
 # 🎓 Services
 - **Journal Reviewer**: Neurocomputing, TNNLS, npj AI, JBHI, TASL 
 - **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS, AAAI

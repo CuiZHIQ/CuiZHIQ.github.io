@@ -223,12 +223,35 @@ h1:before, .anchor:before {
     p { margin: 0; }
 }
 
-.research-logo {
-    width: auto;
-    height: 1.55em;
-    margin: 0 .18em;
-    vertical-align: middle;
-    object-fit: contain;
+.research-experience-list {
+    display: grid;
+    gap: .9rem;
+}
+
+.research-experience-item {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.research-experience-logo {
+    display: flex;
+    width: 250px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        display: block;
+        max-width: 250px;
+        max-height: 90px;
+        object-fit: contain;
+    }
+}
+
+.research-experience-text {
+    min-width: 0;
 }
 
 .news-scroll {
@@ -266,6 +289,12 @@ h1:before, .anchor:before {
         max-width: none;
         max-height: none;
     }
-    .research-logo { height: 1.4em; }
+    .research-experience-item { grid-template-columns: 1fr; gap: .45rem; }
+    .research-experience-logo {
+        width: 210px;
+        height: 76px;
+
+        img { max-width: 210px; max-height: 76px; }
+    }
     .news-scroll { max-height: 11rem; }
 }
