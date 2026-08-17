@@ -158,12 +158,12 @@ if ($Check -in @("Content", "All")) {
 
     Assert-True ($publicationSections.Count -eq 4) "Expected four publication-section disclosures."
     Assert-True (([regex]::Matches($about, 'class="publication-summary"')).Count -eq 4) "Expected four publication summaries."
-    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 17) "Expected 17 paper cards."
+    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 18) "Expected 18 paper cards."
 
     $expectedSections = @(
         @{ Title = 'First-Author Accepted Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $true },
         @{ Title = 'First-Author Preprints'; Papers = 4; Accepted = 0; Preprint = 4; Open = $false },
-        @{ Title = 'Co-Authored Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $false },
+        @{ Title = 'Co-Authored Papers'; Papers = 6; Accepted = 6; Preprint = 0; Open = $false },
         @{ Title = 'preprint Papers'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false }
     )
 
@@ -187,12 +187,23 @@ if ($Check -in @("Content", "All")) {
     $openSections = @($publicationSections | Where-Object { $_.IsOpen })
     Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
 
-    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 10) "Expected 10 accepted badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 11) "Expected 11 accepted badges."
     Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 7) "Expected seven preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://github.com) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
-    Assert-True ($about.Contains('- *2026.07 - 2026.08*, Evolvent AI.')) "Evolvent AI internship is missing."
+    Assert-True ($about.Contains('*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
+    Assert-True ($about.Contains('*2026.07 - 2026.08*, Evolvent AI.')) "Evolvent AI internship is missing."
+    Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
+    Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
+    Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
+    Assert-True ($about.Contains('class="badge badge--accepted">XLLM 2025</div>')) "Less is More accepted badge is missing."
+    Assert-True ($about.Contains('src=''images/less-is-more.png'' alt="Less is More"')) "Less is More official image is missing."
+    Assert-True (([regex]::Matches($about, 'class="internship-item"')).Count -eq 2) "Expected two branded Internship rows."
+    Assert-True ($about.Contains('src=''images/yangtze-info-institute.svg'' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo"')) "Yangtze institute logo is missing."
+    Assert-True ($about.Contains('src=''images/evolvent-ai.png'' alt="Evolvent AI logo"')) "Evolvent AI logo is missing."
+    Assert-True ($about.Contains('href="https://www.ustciscr.cn/"')) "Yangtze institute official link is missing."
+    Assert-True ($about.Contains('href="https://evolvent.co/"')) "Evolvent AI official link is missing."
     Assert-LocalImageReferences $about $repoRoot
 }
 
@@ -206,6 +217,9 @@ if ($Check -in @("Styles", "All")) {
     Assert-True ($scss.Contains('#1d4ed8')) "Missing accepted-paper blue."
     Assert-True ($scss.Contains('#b45309')) "Missing preprint amber."
     Assert-True ($scss.Contains('@media (max-width: 480px)')) "Missing narrow-mobile breakpoint."
+    foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '170px', '64px', '140px', '52px', 'object-fit: contain')) {
+        Assert-True ($scss.Contains($internshipStyle)) "Missing Internship style rule: $internshipStyle"
+    }
 }
 
 if ($failures.Count -gt 0) {

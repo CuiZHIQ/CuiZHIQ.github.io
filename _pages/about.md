@@ -160,7 +160,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">Co-Authored Papers</span>
-  <span class="publication-count">5 papers</span>
+  <span class="publication-count">6 papers</span>
 </summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ECCV 2026</div><img src='images/dag.png' alt="Diffusion Models are Open-World Affordance Learners" width="100%"></div></div>
@@ -215,6 +215,17 @@ Jiahao Yuan, **Zhiqing Cui**, Hanqing Wang, Yuansheng Gao, Yucheng Zhou, Usman N
 Hanqing Wang, Shaoyang Wang, Yiming Zhong, Zemin Yang, Jiamin Wang, **Zhiqing Cui**, Jiahao Yuan, Yifan Han, Mingyu Liu, Yuexin Ma
 
 **AAAI 2026 (Oral)**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">XLLM 2025</div><img src='images/less-is-more.png' alt="Less is More" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)
+
+Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di
+
+**XLLM@ACL 2025 (Shared Task, 3rd Place)**
 </div>
 </div>
 
@@ -285,8 +296,20 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 - **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS, AAAI
 
 # 💻 Internships
-- *2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.
-- *2026.07 - 2026.08*, Evolvent AI.
+<div class="internship-list">
+  <div class="internship-item">
+    <a class="internship-logo" href="https://www.ustciscr.cn/" aria-label="Yangtze River Delta Information Intelligence Innovation Research Institute website">
+      <img src='images/yangtze-info-institute.svg' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo">
+    </a>
+    <div class="internship-text" markdown="1">*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.</div>
+  </div>
+  <div class="internship-item">
+    <a class="internship-logo" href="https://evolvent.co/" aria-label="Evolvent AI website">
+      <img src='images/evolvent-ai.png' alt="Evolvent AI logo">
+    </a>
+    <div class="internship-text" markdown="1">*2026.07 - 2026.08*, Evolvent AI.</div>
+  </div>
+</div>
 
 # 👥 Visitors
 {% include visitor-map.html %}
