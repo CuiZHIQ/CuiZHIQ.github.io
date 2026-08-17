@@ -205,7 +205,8 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
     Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
     Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
-    Assert-True ($about.Contains('class="badge badge--accepted">XLLM 2025</div>')) "Less is More accepted badge is missing."
+    $lessIsMoreHeader = '<div class=''paper-box''><div class=''paper-box-image paper-box-image--landscape''><div><div class="badge badge--accepted">ACL 2025</div><img src=''images/less-is-more-poster.png'' alt="Less is More poster" width="100%"></div></div>'
+    Assert-True ($about.Contains($lessIsMoreHeader)) "Less is More ACL 2025 accepted badge or poster header is missing."
     Assert-True ($about.Contains('class=''paper-box-image paper-box-image--landscape''')) "Less is More landscape image container is missing."
     Assert-True ($about.Contains('src=''images/less-is-more-poster.png'' alt="Less is More poster"')) "Less is More official landscape poster is missing."
     Assert-True (([regex]::Matches($about, 'class="internship-item"')).Count -eq 2) "Expected two branded Internship rows."
