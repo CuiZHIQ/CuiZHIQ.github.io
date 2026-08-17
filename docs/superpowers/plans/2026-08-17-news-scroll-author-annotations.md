@@ -2,9 +2,9 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add accessible vertical auto-scrolling to News and standardize equal-contribution and Project Leader annotations without changing the homepage's existing visual design.
+**Goal:** Add accessible vertical auto-scrolling to News, standardize author annotations, add the accepted Less is More paper, and show larger official Internship logos without changing the homepage's existing visual design.
 
-**Architecture:** Keep the page content semantic and usable without JavaScript. `_pages/about.md` supplies a native scroll viewport and corrected publication text, `assets/css/main.scss` supplies only bounded News-specific layout rules, and a standalone vanilla-JavaScript file progressively adds timed one-item scrolling with pause and reduced-motion behavior. The existing PowerShell validator protects content, styling, and script wiring.
+**Architecture:** Keep the page content semantic and usable without JavaScript. `_pages/about.md` supplies the verified paper, branded Internship rows, native News scroll viewport, and corrected publication text; `assets/css/main.scss` supplies only bounded Internship and News rules; and a standalone vanilla-JavaScript file progressively adds timed one-item scrolling with pause and reduced-motion behavior. Official images are stored locally, and the existing PowerShell validator protects content, asset, styling, and script wiring.
 
 **Tech Stack:** Jekyll, Kramdown/GFM, SCSS, vanilla JavaScript compatible with Node 14 syntax checks, PowerShell validation, GitHub Pages.
 
@@ -18,19 +18,229 @@
 - Wait four seconds before auto-scrolling, advance one news item every four seconds, and pause manual interactions for eight seconds.
 - Disable automatic movement when `prefers-reduced-motion: reduce` matches; native scrolling must always remain available.
 - Add no dependency, framework, News copy change, site-wide redesign, or unrelated refactor.
+- Add Less is More to Co-Authored Papers with the official ACL Anthology link, exact seven-author order, `XLLM 2025` accepted badge, `XLLM@ACL 2025 (Shared Task, 3rd Place)` venue, and official project image.
+- Publication totals become 18 paper cards, 11 accepted badges, 7 preprint badges, and 6 Co-Authored Papers.
+- Use only the official Yangtze institute and Evolvent AI logo assets; desktop logos fit within `170px × 64px`, and mobile logos fit within `140px × 52px`.
 - Direct publication to `origin/main` is authorized only after all checks and final review pass.
 
 ## File Structure
 
-- Modify `_pages/about.md`: wrap the existing News list and correct four equal-contribution author blocks.
-- Modify `assets/css/main.scss`: add News viewport, focus, reduced-motion, and existing-mobile-breakpoint rules only.
+- Modify `_pages/about.md`: add Less is More, convert two Internship lines to logo rows, wrap the existing News list, and correct four equal-contribution author blocks.
+- Modify `assets/css/main.scss`: add bounded Internship-logo rules plus News viewport, focus, reduced-motion, and existing-mobile-breakpoint rules only.
+- Create `images/less-is-more.png`: official paper image from the authors' repository.
+- Create `images/yangtze-info-institute.svg`: official institute website logo.
+- Create `images/evolvent-ai.png`: official Evolvent AI website logo.
 - Create `assets/js/news-scroll.js`: own the News timer, item selection, pause/resume, and reduced-motion behavior.
 - Modify `_includes/scripts.html`: load the dedicated News script after the existing site bundle.
 - Modify `scripts/validate_publications.ps1`: enforce annotation, News markup, styling, script, and include invariants.
 
 ---
 
-### Task 1: Standardize Equal-Contribution and Project Leader Annotations
+### Task 1: Add Less is More and Official Internship Logos
+
+**Files:**
+- Modify: `scripts/validate_publications.ps1:159-196, 199-209`
+- Modify: `_pages/about.md:150-235, 288-291`
+- Modify: `assets/css/main.scss:161-179`
+- Create: `images/less-is-more.png`
+- Create: `images/yangtze-info-institute.svg`
+- Create: `images/evolvent-ai.png`
+
+**Interfaces:**
+- Consumes: Existing publication-card, accepted-badge, publication-count, local-image, and `480px` responsive conventions.
+- Produces: One accepted Co-Authored paper card; two `.internship-item` rows; three verified local image assets; publication totals of 18 cards, 11 accepted badges, 7 preprint badges, and 6 Co-Authored Papers.
+
+- [ ] **Step 1: Add failing publication and internship assertions**
+
+In `scripts/validate_publications.ps1`, change the global paper count, the Co-Authored expected record, and accepted-badge count:
+
+```powershell
+Assert-True (([regex]::Matches($about, 'class=[''\"]paper-box[''\"]')).Count -eq 18) "Expected 18 paper cards."
+```
+
+```powershell
+@{ Title = 'Co-Authored Papers'; Papers = 6; Accepted = 6; Preprint = 0; Open = $false },
+```
+
+```powershell
+Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 11) "Expected 11 accepted badges."
+```
+
+Replace the existing Evolvent bullet-specific assertion and add the first Internship assertion:
+
+```powershell
+Assert-True ($about.Contains('*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
+Assert-True ($about.Contains('*2026.07 - 2026.08*, Evolvent AI.')) "Evolvent AI internship is missing."
+```
+
+Before `Assert-LocalImageReferences`, add:
+
+```powershell
+Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
+Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
+Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
+Assert-True ($about.Contains('class="badge badge--accepted">XLLM 2025</div>')) "Less is More accepted badge is missing."
+Assert-True ($about.Contains("src='images/less-is-more.png' alt=\"Less is More\"")) "Less is More official image is missing."
+Assert-True (([regex]::Matches($about, 'class="internship-item"')).Count -eq 2) "Expected two branded Internship rows."
+Assert-True ($about.Contains("src='images/yangtze-info-institute.svg' alt=\"Yangtze River Delta Information Intelligence Innovation Research Institute logo\"")) "Yangtze institute logo is missing."
+Assert-True ($about.Contains("src='images/evolvent-ai.png' alt=\"Evolvent AI logo\"")) "Evolvent AI logo is missing."
+Assert-True ($about.Contains('href="https://www.ustciscr.cn/"')) "Yangtze institute official link is missing."
+Assert-True ($about.Contains('href="https://evolvent.co/"')) "Evolvent AI official link is missing."
+```
+
+Inside the Styles block, add:
+
+```powershell
+foreach ($internshipStyle in @('.internship-list', '.internship-item', '.internship-logo', '170px', '64px', '140px', '52px', 'object-fit: contain')) {
+    Assert-True ($scss.Contains($internshipStyle)) "Missing Internship style rule: $internshipStyle"
+}
+```
+
+- [ ] **Step 2: Run the validator and confirm the new contract fails**
+
+Run:
+
+```powershell
+pwsh -NoProfile -File scripts\validate_publications.ps1 -Check All
+```
+
+Expected: exit `1` with the 18-card/6-paper/11-accepted mismatch plus missing Less is More, Internship row, official image, link, and style failures. Existing 17-card publication structure remains otherwise valid.
+
+- [ ] **Step 3: Download the three official assets to exact local paths**
+
+Run:
+
+```powershell
+Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/JhCircle/Less-is-More/main/asset/less_is_more.png' -OutFile 'images/less-is-more.png'
+Invoke-WebRequest -Uri 'https://www.ustciscr.cn/Public/Home/images/logo_12.svg' -OutFile 'images/yangtze-info-institute.svg'
+Invoke-WebRequest -Uri 'https://evolvent.co/images/logo/logo-square.png' -OutFile 'images/evolvent-ai.png'
+```
+
+Then verify each file is non-empty and has the expected signature:
+
+```powershell
+if ((Get-Item 'images/less-is-more.png').Length -le 0) { throw 'Less is More image is empty.' }
+if ((Get-Item 'images/evolvent-ai.png').Length -le 0) { throw 'Evolvent AI image is empty.' }
+if (-not (Get-Content -Raw 'images/yangtze-info-institute.svg').Contains('<svg')) { throw 'Institute SVG is invalid.' }
+```
+
+- [ ] **Step 4: Add the accepted paper card and update the section count**
+
+In the Co-Authored Papers summary in `_pages/about.md`, change `5 papers` to `6 papers`. Add this card inside that disclosure after the existing accepted-paper cards:
+
+```html
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">XLLM 2025</div><img src='images/less-is-more.png' alt="Less is More" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)
+
+Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di
+
+**XLLM@ACL 2025 (Shared Task, 3rd Place)**
+</div>
+</div>
+```
+
+- [ ] **Step 5: Replace the two plain Internship lines with official-logo rows**
+
+Replace only the two existing list items below `# 💻 Internships` with:
+
+```html
+<div class="internship-list">
+  <div class="internship-item">
+    <a class="internship-logo" href="https://www.ustciscr.cn/" aria-label="Yangtze River Delta Information Intelligence Innovation Research Institute website">
+      <img src='images/yangtze-info-institute.svg' alt="Yangtze River Delta Information Intelligence Innovation Research Institute logo">
+    </a>
+    <div class="internship-text" markdown="1">*2024.06 - 2024.08*, Yangtze River Delta Information Intelligence Innovation Research Institute, China.</div>
+  </div>
+  <div class="internship-item">
+    <a class="internship-logo" href="https://evolvent.co/" aria-label="Evolvent AI website">
+      <img src='images/evolvent-ai.png' alt="Evolvent AI logo">
+    </a>
+    <div class="internship-text" markdown="1">*2026.07 - 2026.08*, Evolvent AI.</div>
+  </div>
+</div>
+```
+
+- [ ] **Step 6: Add bounded Internship layout styles**
+
+Insert before the existing `@media (max-width: 480px)` block in `assets/css/main.scss`:
+
+```scss
+.internship-list {
+    display: grid;
+    gap: .85rem;
+}
+
+.internship-item {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+}
+
+.internship-logo {
+    display: flex;
+    width: 170px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        display: block;
+        max-width: 170px;
+        max-height: 64px;
+        object-fit: contain;
+    }
+}
+
+.internship-text {
+    min-width: 0;
+
+    p { margin: 0; }
+}
+```
+
+Inside the existing `@media (max-width: 480px)` block, add:
+
+```scss
+    .internship-item { grid-template-columns: 1fr; gap: .45rem; }
+    .internship-logo {
+        width: 140px;
+        height: 52px;
+
+        img { max-width: 140px; max-height: 52px; }
+    }
+```
+
+- [ ] **Step 7: Run focused validation and inspect the assets**
+
+Run:
+
+```powershell
+pwsh -NoProfile -File scripts\validate_publications.ps1 -Check Content
+pwsh -NoProfile -File scripts\validate_publications.ps1 -Check Styles
+pwsh -NoProfile -File scripts\validate_publications.ps1 -Check All
+git diff --check
+```
+
+Expected: all validators pass, local-image validation finds the three exact-case assets, and diff check exits `0`.
+
+- [ ] **Step 8: Commit the paper and Internship branding**
+
+Run:
+
+```powershell
+git add -- _pages/about.md assets/css/main.scss scripts/validate_publications.ps1 images/less-is-more.png images/yangtze-info-institute.svg images/evolvent-ai.png
+git diff --cached --check
+git commit -m "feat: add accepted paper and internship logos"
+```
+
+Expected: one commit containing only the six listed paths.
+
+---
+
+### Task 2: Standardize Equal-Contribution and Project Leader Annotations
 
 **Files:**
 - Modify: `scripts/validate_publications.ps1:190-196`
@@ -38,7 +248,7 @@
 
 **Interfaces:**
 - Consumes: The existing `$about` content string and `Assert-True` helper in `scripts/validate_publications.ps1`.
-- Produces: Four dagger-form equal-contribution author lines, four `† Equal contribution` notes, and exactly two `Project Leader` labels for Task 3 validation.
+- Produces: Four dagger-form equal-contribution author lines, four `† Equal contribution` notes, and exactly two `Project Leader` labels for Task 4 validation.
 
 - [ ] **Step 1: Add failing annotation assertions**
 
@@ -132,7 +342,7 @@ Expected: one commit containing only the two listed files.
 
 ---
 
-### Task 2: Add Accessible News Auto-Scrolling
+### Task 3: Add Accessible News Auto-Scrolling
 
 **Files:**
 - Modify: `scripts/validate_publications.ps1:1-12, 193-209`
@@ -145,7 +355,7 @@ Expected: one commit containing only the two listed files.
 - Consumes: `[data-news-scroll]` containing a Kramdown-rendered `<ul>` and `<li>` elements.
 - Produces: `initNewsScroller(viewport: HTMLElement): void` inside an isolated IIFE; it has no global API and progressively enhances every `[data-news-scroll]` viewport.
 - Produces: `.news-scroll` with native vertical overflow and inherited typography/colors.
-- Produces: a `<script src="assets/js/news-scroll.js" defer></script>` include for Task 3 deployment checks.
+- Produces: a `<script src="assets/js/news-scroll.js" defer></script>` include for Task 4 deployment checks.
 
 - [ ] **Step 1: Extend the validator with failing News checks**
 
@@ -422,7 +632,7 @@ Expected: one commit containing only the five listed paths.
 
 ---
 
-### Task 3: Review, Publish, and Verify the Live Page
+### Task 4: Review, Publish, and Verify the Live Page
 
 **Files:**
 - Verify: `_pages/about.md`
@@ -430,9 +640,12 @@ Expected: one commit containing only the five listed paths.
 - Verify: `assets/js/news-scroll.js`
 - Verify: `_includes/scripts.html`
 - Verify: `scripts/validate_publications.ps1`
+- Verify: `images/less-is-more.png`
+- Verify: `images/yangtze-info-institute.svg`
+- Verify: `images/evolvent-ai.png`
 
 **Interfaces:**
-- Consumes: Task 1's annotation invariants and Task 2's News markup/style/script contract.
+- Consumes: Task 1's paper/logo contract, Task 2's annotation invariants, and Task 3's News markup/style/script contract.
 - Produces: A reviewed `origin/main` deployment and evidence that the live HTML, CSS, and JavaScript expose the approved behavior and content.
 
 - [ ] **Step 1: Run a clean whole-branch validation**
@@ -447,20 +660,22 @@ git status --short
 git log -5 --oneline
 ```
 
-Expected: syntax and validation pass, diff check is silent, the worktree is clean, and the two feature commits follow design commit `90300e3`.
+Expected: syntax and validation pass, diff check is silent, the worktree is clean, and the three feature commits follow the updated design and plan commits.
 
 - [ ] **Step 2: Review the complete change against the approved spec**
 
 Review:
 
 ```powershell
-git diff 90300e3..HEAD -- _pages/about.md assets/css/main.scss assets/js/news-scroll.js _includes/scripts.html scripts/validate_publications.ps1
+git diff 90300e3..HEAD -- _pages/about.md assets/css/main.scss assets/js/news-scroll.js _includes/scripts.html scripts/validate_publications.ps1 images/less-is-more.png images/yangtze-info-institute.svg images/evolvent-ai.png
 ```
 
 Confirm all of the following before publishing:
 
 - No News text, order, emoji, global color, font, sidebar, publication layout, card, or badge change appears.
 - Exactly four equal-contribution notes and two Zhiqing Cui Project Leader labels appear.
+- Less is More appears once as an XLLM 2025 accepted Co-Authored paper, and counts are 18 total, 11 accepted, 7 preprints, and 6 Co-Authored.
+- Both Internship entries retain their wording and use only the two verified official logos at the bounded responsive sizes.
 - News remains a semantic list in a native scroll viewport.
 - JavaScript stops for reduced motion and interaction, and no dependency is added.
 
@@ -506,7 +721,13 @@ if (-not $html.Contains('class="news-scroll"')) { throw 'Live News viewport is m
 if (-not $html.Contains('Zhiqing Cui†</strong> (Project Leader)')) { throw 'Live Project Leader label is missing.' }
 if (([regex]::Matches($html, [regex]::Escape('(Project Leader)'))).Count -ne 2) { throw 'Live Project Leader count is incorrect.' }
 if (([regex]::Matches($html, [regex]::Escape('† Equal contribution'))).Count -ne 4) { throw 'Live equal-contribution note count is incorrect.' }
+if (-not $html.Contains('LLMSR@XLLM25: Less is More')) { throw 'Live Less is More paper is missing.' }
+if (-not $html.Contains('XLLM@ACL 2025 (Shared Task, 3rd Place)')) { throw 'Live Less is More venue is missing.' }
+if (-not $html.Contains('6 papers')) { throw 'Live Co-Authored paper count is missing.' }
+if (-not $html.Contains('images/yangtze-info-institute.svg')) { throw 'Live institute logo is missing.' }
+if (-not $html.Contains('images/evolvent-ai.png')) { throw 'Live Evolvent AI logo is missing.' }
 if (-not $css.Contains('.news-scroll')) { throw 'Live News CSS is missing.' }
+if (-not $css.Contains('.internship-logo')) { throw 'Live Internship CSS is missing.' }
 if (-not $js.Contains('prefers-reduced-motion: reduce')) { throw 'Live News behavior is missing reduced-motion handling.' }
 if ((& git rev-parse HEAD).Trim() -ne ((& git ls-remote origin refs/heads/main) -split '\s+')[0]) { throw 'Local and remote main do not match.' }
 ```
@@ -517,7 +738,8 @@ Expected: all assertions pass, the homepage and resources return HTTP `200`, and
 
 ## Plan Self-Review Checklist
 
-- Every approved News behavior maps to Task 2 and Task 3 validation.
-- Every annotation requirement maps to Task 1 and Task 3 live checks.
+- Every approved News behavior maps to Task 3 and Task 4 validation.
+- Every accepted-paper and Internship-logo requirement maps to Task 1 and Task 4 validation.
+- Every annotation requirement maps to Task 2 and Task 4 live checks.
 - Every file path, selector, attribute, timing constant, label, command, and commit scope is explicit.
 - No global visual redesign, dependency, News-content edit, unrelated refactor, placeholder, or deferred implementation remains.
