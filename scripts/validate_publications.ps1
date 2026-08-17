@@ -305,7 +305,7 @@ if ($Check -in @("Styles", "All")) {
     foreach ($landscapeStyle in @('.paper-box-image--landscape', 'aspect-ratio: 16 / 9', 'object-fit: cover', 'object-position: top')) {
         Assert-True ($scss.Contains($landscapeStyle)) "Missing landscape paper-image style rule: $landscapeStyle"
     }
-    foreach ($researchStyle in @('.research-experience-list', '.research-experience-item', '.research-experience-logo', 'grid-template-columns: 250px minmax(0, 1fr)', 'width: 250px', 'height: 90px', 'width: 210px', 'height: 76px')) {
+    foreach ($researchStyle in @('.research-experience-list', '.research-experience-item', '.research-experience-logo', 'grid-template-columns: 220px minmax(0, 1fr)', 'width: 220px', 'height: 90px', 'width: 210px', 'height: 76px')) {
         Assert-True ($scss.Contains($researchStyle)) "Missing Research Experience style rule: $researchStyle"
     }
 }
