@@ -239,7 +239,7 @@ Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixi
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">EMNLP Findings 2026</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">EMNLP 2026</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models](https://arxiv.org/abs/2601.02968)
