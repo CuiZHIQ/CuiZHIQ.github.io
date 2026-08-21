@@ -174,8 +174,8 @@ if ($Check -in @("Content", "All")) {
     $expectedSections = @(
         @{ Title = 'First-Author Accepted Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $true },
         @{ Title = 'First-Author Preprints'; Papers = 4; Accepted = 0; Preprint = 4; Open = $false },
-        @{ Title = 'Co-Authored Papers'; Papers = 6; Accepted = 6; Preprint = 0; Open = $false },
-        @{ Title = 'preprint Papers'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false }
+        @{ Title = 'Co-Authored Papers'; Papers = 7; Accepted = 7; Preprint = 0; Open = $false },
+        @{ Title = 'preprint Papers'; Papers = 2; Accepted = 0; Preprint = 2; Open = $false }
     )
 
     foreach ($expected in $expectedSections) {
@@ -198,8 +198,8 @@ if ($Check -in @("Content", "All")) {
     $openSections = @($publicationSections | Where-Object { $_.IsOpen })
     Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
 
-    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 11) "Expected 11 accepted badges."
-    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 7) "Expected seven preprint badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 12) "Expected 12 accepted badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 6) "Expected six preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."

@@ -170,7 +170,7 @@ Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhon
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">Co-Authored Papers</span>
-  <span class="publication-count">6 papers</span>
+  <span class="publication-count">7 papers</span>
 </summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ECCV 2026</div><img src='images/dag.png' alt="Diffusion Models are Open-World Affordance Learners" width="100%"></div></div>
@@ -239,12 +239,23 @@ Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixi
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">EMNLP Findings 2026</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models](https://arxiv.org/abs/2601.02968)
+
+Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu Wan, Sheng Sun, Lvchun Wang, Wei Yu, Yuxuan Liang
+
+**Findings of EMNLP 2026**
+</div>
+</div>
+
 </details>
 
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">preprint Papers</span>
-  <span class="publication-count">3 papers</span>
+  <span class="publication-count">2 papers</span>
 </summary>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/omni-deepsearch.png' alt="Omni-DeepSearch" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -265,16 +276,6 @@ Tao Yu, Yiming Ding, Shenghua Chai, Minghui Zhang, Zhongtian Luo, Xinming Wang, 
 Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuhao Liu, **Zhiqing Cui**, Jiahao Yuan, Lu Dai, Zhiyuan Ma, Hui Xiong
 
 **arXiv preprint**
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/ration.png' alt="Rationale-Grounded" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Rationale-Grounded In-Context Learning for Time Series Reasoning with Multimodal Large Language Models](https://arxiv.org/abs/2601.02968)
-
-Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu Wan, Sheng Sun, Lvchun Wang, Wei Yu, Yuxuan Liang
-
 </div>
 </div>
 
