@@ -29,6 +29,7 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 
 # 🔥 News 
 <div class="news-scroll" data-news-scroll tabindex="0" aria-label="Latest news" markdown="1">
+- *2026.08*: &nbsp;🎉🎉 My paper "EarthVerse" was published on arXiv. This work was completed during my research assistantship at MIT. Many thanks to Dingyi and Yihong!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the KDD Undergraduate Consortium and Travel Grant. See you on the beautiful Jeju Island. Thanks to KDD!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the Association for Computational Linguistics in recognition of exceptional contributions and accomplishments. Thanks to ACL!
 - *2026.05*: &nbsp;🎉🎉 My paper "Uno-Orchestra" was published on arXiv. This work marks my initial exploration into multi-agent reinforcement learning and routing orchestration.
@@ -117,7 +118,7 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
   <span class="publication-summary-title">First-Author Preprints</span>
   <span class="publication-count">5 papers</span>
 </summary>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/earthverse.png' alt="EarthVerse" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image paper-box-image--earthverse'><div><div class="badge badge--preprint">arXiv</div><img src='images/earthverse.png' alt="EarthVerse" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](https://arxiv.org/abs/2608.23525)
