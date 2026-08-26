@@ -286,6 +286,8 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('class=''paper-box-image paper-box-image--earthverse''')) "EarthVerse image container is missing its size modifier."
     Assert-True ($about.Contains('<span class="publication-highlight">✦ Initial Review Score · Top 0.6%</span>')) "Augur initial-review highlight is missing."
     Assert-True ($about.Contains('*2025.10*: Full Scholarship, AAAI-26 Undergraduate Consortium (UC) (USD 2,500).')) "AAAI UC scholarship amount is missing."
+    Assert-True ($about.Contains('I am a fourth-year undergraduate student (2023-2027)')) "About Me must identify Zhiqing Cui as a fourth-year undergraduate student."
+    Assert-True (-not $about.Contains('I am a third-year undergraduate student')) "The outdated third-year description must be removed."
     Assert-True ($about.Contains('*2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S) (approx. USD 800 funding).')) "National innovation project funding amount is missing."
     Assert-True ($about.Contains('*2026.06*: Full Scholarship, ACL Diversity and Inclusion Subsidy (USD 1,800).')) "ACL D&I subsidy amount is missing."
     Assert-True ($about.Contains('*2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC) (USD 1,500).')) "KDD UC scholarship amount is missing."
