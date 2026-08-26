@@ -289,6 +289,8 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('*2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S) (approx. USD 800 funding).')) "National innovation project funding amount is missing."
     Assert-True ($about.Contains('*2026.06*: Full Scholarship, ACL Diversity and Inclusion Subsidy (USD 1,800).')) "ACL D&I subsidy amount is missing."
     Assert-True ($about.Contains('*2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC) (USD 1,500).')) "KDD UC scholarship amount is missing."
+    Assert-True ($about.Contains('**Journal Reviewer**: Neurocomputing; IEEE Transactions on Neural Networks and Learning Systems (TNNLS); npj Artificial Intelligence; IEEE Journal of Biomedical and Health Informatics (JBHI); IEEE Transactions on Audio, Speech and Language Processing (TASLPRO)')) "Journal reviewer names are not fully expanded."
+    Assert-True ($about.Contains('**Conference Reviewer**: Annual Meeting of the Association for Computational Linguistics (ACL); International Joint Conference on Artificial Intelligence (IJCAI); International Conference on Machine Learning (ICML); Conference on Neural Information Processing Systems (NeurIPS); AAAI Conference on Artificial Intelligence (AAAI)')) "Conference reviewer names are not fully expanded."
     Assert-True ($visitorMap.Contains('class="visitor-map-frame"')) "Visitor map is missing its responsive size wrapper."
     Assert-True ($visitorMap.Contains('width: min(86%, 680px);')) "Visitor map desktop width must be capped at 680px."
     Assert-True ($visitorMap.Contains('width: 94%;')) "Visitor map must retain a readable mobile width."

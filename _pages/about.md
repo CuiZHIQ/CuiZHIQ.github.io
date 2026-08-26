@@ -340,8 +340,8 @@ Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuh
 </div>
 
 # 🎓 Services
-- **Journal Reviewer**: Neurocomputing, TNNLS, npj AI, JBHI, TASL 
-- **Conference Reviewer**: ACL, IJCAI, ICML, NeurIPS, AAAI
+- **Journal Reviewer**: Neurocomputing; IEEE Transactions on Neural Networks and Learning Systems (TNNLS); npj Artificial Intelligence; IEEE Journal of Biomedical and Health Informatics (JBHI); IEEE Transactions on Audio, Speech and Language Processing (TASLPRO)
+- **Conference Reviewer**: Annual Meeting of the Association for Computational Linguistics (ACL); International Joint Conference on Artificial Intelligence (IJCAI); International Conference on Machine Learning (ICML); Conference on Neural Information Processing Systems (NeurIPS); AAAI Conference on Artificial Intelligence (AAAI)
 
 # 💻 Internships
 <div class="internship-list">
