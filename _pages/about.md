@@ -301,11 +301,11 @@ Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuh
 - *2024.09*: First Prize, National Undergraduate Mathematical Contest in Modeling (Jiangsu Province).
 - *2025.04*: 3rd Place, ACL LLMSR@ XLLM25 Competition.
 - *2025.08*: Second Prize (National Level), China Graduate Mathematical Contest in Modeling (participated independently as an undergraduate).
-- *2025.10*: Full Scholarship, AAAI-26 Undergraduate Consortium (UC).
+- *2025.10*: Full Scholarship, AAAI-26 Undergraduate Consortium (UC) (USD 2,500).
 - *2025.12*: Third Prize (National Level), Global Campus AI Algorithm Elite Competition - Smart Meteorology Challenge.
-- *2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S).
-- *2026.06*: Full Scholarship, ACL Diversity and Inclusion Subsidy.
-- *2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC).
+- *2026.03*: Excellent Conclusion (National Level), National Undergraduate Innovation and Entrepreneurship Training Program project on AI for Science (AI4S) (approx. USD 800 funding).
+- *2026.06*: Full Scholarship, ACL Diversity and Inclusion Subsidy (USD 1,800).
+- *2026.06*: Full Scholarship, KDD-26 Undergraduate Consortium (UC) (USD 1,500).
 
 # 📖 Research Experiences
 <div class="research-experience-list">
