@@ -61,6 +61,8 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 **Zhiqing Cui**, Binwu Wang, Qingxiang Liu, Yeqiang Wang, Zhengyang Zhou, Yuxuan Liang, Yang Wang
 
 **ACL 2026 (Main)**
+
+<span class="publication-highlight">✦ Initial Review Score · Top 0.6%</span>
 </div>
 </div>
 

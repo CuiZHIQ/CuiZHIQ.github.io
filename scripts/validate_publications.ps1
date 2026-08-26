@@ -284,6 +284,7 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($about.Contains('aria-label="Latest news"')) "News viewport is missing its accessible label."
     Assert-True ($about.Contains('*2026.08*: &nbsp;🎉🎉 My paper "EarthVerse" was published on arXiv. This work was completed during my research assistantship at MIT. Many thanks to Dingyi and Yihong!')) "EarthVerse MIT RA news item is missing."
     Assert-True ($about.Contains('class=''paper-box-image paper-box-image--earthverse''')) "EarthVerse image container is missing its size modifier."
+    Assert-True ($about.Contains('<span class="publication-highlight">✦ Initial Review Score · Top 0.6%</span>')) "Augur initial-review highlight is missing."
     Assert-True ($visitorMap.Contains('class="visitor-map-frame"')) "Visitor map is missing its responsive size wrapper."
     Assert-True ($visitorMap.Contains('width: min(86%, 680px);')) "Visitor map desktop width must be capped at 680px."
     Assert-True ($visitorMap.Contains('width: 94%;')) "Visitor map must retain a readable mobile width."
@@ -311,6 +312,9 @@ if ($Check -in @("Styles", "All")) {
     }
     foreach ($earthverseStyle in @('.paper-box-image--earthverse', 'width: 92%', 'margin: 0 auto')) {
         Assert-True ($scss.Contains($earthverseStyle)) "Missing EarthVerse image style rule: $earthverseStyle"
+    }
+    foreach ($highlightStyle in @('.publication-highlight', 'color: #5f87aa', 'border: 1px solid rgba(95, 135, 170, 0.35)')) {
+        Assert-True ($scss.Contains($highlightStyle)) "Missing publication highlight style rule: $highlightStyle"
     }
     foreach ($researchStyle in @('.research-experience-list', '.research-experience-item', '.research-experience-logo', 'grid-template-columns: 220px minmax(0, 1fr)', 'width: 220px', 'height: 90px', 'width: 210px', 'height: 76px')) {
         Assert-True ($scss.Contains($researchStyle)) "Missing Research Experience style rule: $researchStyle"

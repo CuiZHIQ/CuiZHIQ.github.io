@@ -146,6 +146,19 @@
         > p:first-child a { color: #0f3d8a; font-size: 1.05rem; font-weight: 700; line-height: 1.35; }
     }
 
+    .publication-highlight {
+        display: inline-block;
+        margin-top: 0.15rem;
+        padding: 0.16rem 0.48rem;
+        color: #5f87aa;
+        background: rgba(219, 236, 249, 0.42);
+        border: 1px solid rgba(95, 135, 170, 0.35);
+        border-radius: 999px;
+        font-size: 0.82em;
+        font-weight: 600;
+        line-height: 1.35;
+    }
+
     @include breakpoint($medium) {
         display: grid;
         grid-template-columns: minmax(200px, 38%) minmax(0, 1fr);
