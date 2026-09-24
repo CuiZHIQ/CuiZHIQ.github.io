@@ -184,8 +184,19 @@ Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhon
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">Co-Authored Papers</span>
-  <span class="publication-count">7 papers</span>
+  <span class="publication-count">8 papers</span>
 </summary>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">NeurIPS 2026</div><img src='images/videoafford.png' alt="VideoAfford" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://openreview.net/forum?id=lSZXrNId2d)
+
+Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuhao Liu, **Zhiqing Cui**, Jiahao Yuan, Lu Dai, Zhiyuan Ma, Hui Xiong
+
+**NeurIPS 2026**
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ECCV 2026</div><img src='images/dag.png' alt="Diffusion Models are Open-World Affordance Learners" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -269,7 +280,7 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">preprint Papers</span>
-  <span class="publication-count">2 papers</span>
+  <span class="publication-count">1 paper</span>
 </summary>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/omni-deepsearch.png' alt="Omni-DeepSearch" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -277,17 +288,6 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 [Omni-DeepSearch: A Benchmark for Audio-Driven Omni-Modal Deep Search](https://arxiv.org/abs/2605.08762)
 
 Tao Yu, Yiming Ding, Shenghua Chai, Minghui Zhang, Zhongtian Luo, Xinming Wang, Xinlong Chen, Zhaolu Kang, Junhao Gong, Yuxuan Zhou, Haopeng Jin, **Zhiqing Cui**, Jiabing Yang, YiFan Zhang, Hongzhu Yi, Zheqi He, Xi Yang, Yan Huang, Liang Wang
-
-**arXiv preprint**
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/videoafford.png' alt="VideoAfford" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[VideoAfford: Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://arxiv.org/abs/2602.09638)
-
-Hanqing Wang, Mingyu Liu, Xiaoyu Chen, Chengwei Ma, Yiming Zhong, Wenti Yin, Yuhao Liu, **Zhiqing Cui**, Jiahao Yuan, Lu Dai, Zhiyuan Ma, Hui Xiong
 
 **arXiv preprint**
 </div>

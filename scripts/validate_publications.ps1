@@ -145,7 +145,7 @@ if ($Check -in @("Content", "All")) {
         if ($summaryMatches.Count -eq 1) {
             $summaryBody = $summaryMatches[0].Groups['summaryBody'].Value
             $titleMatches = [regex]::Matches($summaryBody, '<span\b[^>]*class="publication-summary-title"[^>]*>(?<title>[^<]*)</span\s*>')
-            $countMatches = [regex]::Matches($summaryBody, '<span\b[^>]*class="publication-count"[^>]*>(?<count>\d+) papers</span\s*>')
+            $countMatches = [regex]::Matches($summaryBody, '<span\b[^>]*class="publication-count"[^>]*>(?<count>\d+) papers?</span\s*>')
             Assert-True ($titleMatches.Count -eq 1) "Each publication summary must contain exactly one title."
             Assert-True ($countMatches.Count -eq 1) "Each publication summary must contain exactly one paper count."
             if ($titleMatches.Count -eq 1) { $title = $titleMatches[0].Groups['title'].Value.Trim() }
@@ -174,8 +174,8 @@ if ($Check -in @("Content", "All")) {
     $expectedSections = @(
         @{ Title = 'First-Author Accepted Papers'; Papers = 5; Accepted = 5; Preprint = 0; Open = $true },
         @{ Title = 'First-Author Preprints'; Papers = 5; Accepted = 0; Preprint = 5; Open = $false },
-        @{ Title = 'Co-Authored Papers'; Papers = 7; Accepted = 7; Preprint = 0; Open = $false },
-        @{ Title = 'preprint Papers'; Papers = 2; Accepted = 0; Preprint = 2; Open = $false }
+        @{ Title = 'Co-Authored Papers'; Papers = 8; Accepted = 8; Preprint = 0; Open = $false },
+        @{ Title = 'preprint Papers'; Papers = 1; Accepted = 0; Preprint = 1; Open = $false }
     )
 
     foreach ($expected in $expectedSections) {
@@ -198,14 +198,18 @@ if ($Check -in @("Content", "All")) {
     $openSections = @($publicationSections | Where-Object { $_.IsOpen })
     Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
 
-    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 12) "Expected 12 accepted badges."
-    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 7) "Expected seven preprint badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 13) "Expected 13 accepted badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 6) "Expected six preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
     Assert-True ($about.Contains('<em>2024.06 - 2024.08</em>, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
     Assert-True ($about.Contains('<em>2026.07 - 2026.08</em>, Evolvent AI.')) "Evolvent AI internship is missing."
     Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
+    Assert-True ($about.Contains('[Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://openreview.net/forum?id=lSZXrNId2d)')) "VideoAfford must use its NeurIPS OpenReview title and link."
+    Assert-True ($about.Contains('<div class="badge badge--accepted">NeurIPS 2026</div><img src=''images/videoafford.png''')) "VideoAfford must have a NeurIPS 2026 accepted badge."
+    Assert-True ($about.Contains('**NeurIPS 2026**')) "VideoAfford NeurIPS 2026 venue text is missing."
+    Assert-True (-not $about.Contains('[VideoAfford: Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://arxiv.org/abs/2602.09638)')) "The outdated VideoAfford arXiv entry is still present."
     Assert-True ($about.Contains('Jiahao Yuan, Xingzhe Sun, Xing Yu, Jingwen Wang, Dehui Du, **Zhiqing Cui**, Zixiang Di')) "Less is More author order is incorrect."
     Assert-True ($about.Contains('**XLLM@ACL 2025 (Shared Task, 3rd Place)**')) "Less is More venue is incorrect."
     $lessIsMoreHeader = '<div class=''paper-box''><div class=''paper-box-image paper-box-image--landscape''><div><div class="badge badge--accepted">ACL 2025</div><img src=''images/less-is-more-poster.png'' alt="Less is More poster" width="100%"></div></div>'
