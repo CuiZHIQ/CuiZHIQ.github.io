@@ -50,8 +50,19 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 <details class="publication-section" open markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">First-Author Accepted Papers</span>
-  <span class="publication-count">5 papers</span>
+  <span class="publication-count">6 papers</span>
 </summary>
+
+<div class='paper-box'><div class='paper-box-image paper-box-image--earthverse'><div><div class="badge badge--accepted">NeurIPS FMTS 2026</div><img src='images/earthverse.png' alt="EarthVerse" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](https://arxiv.org/abs/2608.23525)
+
+**Zhiqing Cui**, Xinxiang Yin, Yihong Tang, Xinglang Zhang, Yuanzhe Hu, Siru Zhong, Weidong Tang, Yuxuan Liang, Weijia Li, Ming Jin, Shirui Pan, Yuhao Kang, Dingyi Zhuang, Jinhua Zhao
+
+**NeurIPS FMTS 2026**
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--accepted">ACL 2026</div><img src='images/Augur.png' alt="Augur" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -118,18 +129,8 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">First-Author Preprints</span>
-  <span class="publication-count">5 papers</span>
+  <span class="publication-count">4 papers</span>
 </summary>
-<div class='paper-box'><div class='paper-box-image paper-box-image--earthverse'><div><div class="badge badge--preprint">arXiv</div><img src='images/earthverse.png' alt="EarthVerse" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards](https://arxiv.org/abs/2608.23525)
-
-**Zhiqing Cui**, Xinxiang Yin, Yihong Tang, Xinglang Zhang, Yuanzhe Hu, Siru Zhong, Weidong Tang, Yuxuan Liang, Weijia Li, Ming Jin, Shirui Pan, Yuhao Kang, Dingyi Zhuang, Jinhua Zhao
-
-**arXiv preprint**
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/scope-router.png' alt="SCOPE-Router" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
