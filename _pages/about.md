@@ -175,7 +175,7 @@ Tao Yu†, Minghui Zhang†, **Zhiqing Cui†** (Project Leader), Hao Wang, Zhon
 
 **Zhiqing Cui**, Siru Zhong, Ming Jin, Shirui Pan, Qingsong Wen, Yuxuan Liang
 
-**arXiv preprint**
+**Nature Communications — In submission**
 
 </div>
 </div>
