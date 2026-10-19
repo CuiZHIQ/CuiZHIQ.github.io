@@ -169,11 +169,11 @@ if ($Check -in @("Content", "All")) {
 
     Assert-True ($publicationSections.Count -eq 4) "Expected four publication-section disclosures."
     Assert-True (([regex]::Matches($about, 'class="publication-summary"')).Count -eq 4) "Expected four publication summaries."
-    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 20) "Expected 20 paper cards."
+    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 19) "Expected 19 paper cards."
 
     $expectedSections = @(
         @{ Title = 'First-Author Accepted Papers'; Papers = 6; Accepted = 6; Preprint = 0; Open = $true },
-        @{ Title = 'First-Author Preprints'; Papers = 4; Accepted = 0; Preprint = 4; Open = $false },
+        @{ Title = 'First-Author Preprints'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false },
         @{ Title = 'Co-Authored Papers'; Papers = 8; Accepted = 8; Preprint = 0; Open = $false },
         @{ Title = 'preprint Papers'; Papers = 2; Accepted = 0; Preprint = 2; Open = $false }
     )
@@ -199,7 +199,7 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
 
     Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 14) "Expected 14 accepted badges."
-    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 6) "Expected six preprint badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 5) "Expected five preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
@@ -235,7 +235,6 @@ if ($Check -in @("Content", "All")) {
         '[MADGCN: A Meteorology-Aware Spatio-Temporal Graph Convolution Network for Long-term Air Pollution Forecasting](https://doi.org/10.1109/TKDE.2026.3692204)',
         '[Draw with Thought: Unleashing Multimodal Reasoning for Scientific Diagram Generation](https://arxiv.org/abs/2504.09479)',
         '[Breaking through tropical cyclone intensity prediction: a foundation model Prithvi-TC](https://doi.org/10.1007/s11704-025-41268-6)',
-        '[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation](https://arxiv.org/abs/2605.05007)',
         '[PaperX: A Unified Framework for Multimodal Academic Presentation Generation with Scholar DAG](https://arxiv.org/abs/2602.03866)',
         '[Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality Forecasting](https://arxiv.org/abs/2601.21899)',
         '[DropoutTS: Sample-Adaptive Dropout for Robust Time Series Forecasting](https://arxiv.org/abs/2601.21726)',

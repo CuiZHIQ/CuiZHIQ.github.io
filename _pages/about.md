@@ -32,7 +32,6 @@ Over the past year, I worked on spatiotemporal data mining with Assistant Profes
 - *2026.08*: &nbsp;🎉🎉 My paper "EarthVerse" was published on arXiv. This work was completed during my research assistantship at MIT. Many thanks to Dingyi and Yihong!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the KDD Undergraduate Consortium and Travel Grant. See you on the beautiful Jeju Island. Thanks to KDD!
 - *2026.06*: &nbsp;🏆🏆 Received full funding from the Association for Computational Linguistics in recognition of exceptional contributions and accomplishments. Thanks to ACL!
-- *2026.05*: &nbsp;🎉🎉 My paper "Uno-Orchestra" was published on arXiv. This work marks my initial exploration into multi-agent reinforcement learning and routing orchestration.
 - *2026.04*: &nbsp;🎉🎉 My paper "MADGCN" was accepted by IEEE TKDE, initiated during my freshman year. Thanks to Bin!
 - *2026.04*: &nbsp;🎉🎉 My paper "Augur: Modeling Covariate Causal Associations in Time Series via Large Language Models" was accepted main conference on ACL.
 - *2026.02*: &nbsp;🎉🎉 Our paper "PaperX" was published on arXiv. We introduce the first unified framework for academic presentation. I am honored to lead this work. Thanks to Tao and other friends!
@@ -129,7 +128,7 @@ Jiaming Ma†, **Zhiqing Cui†**, Binwu Wang, Pengkun Wang, Zhengyang Zhou, Zhe
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">First-Author Preprints</span>
-  <span class="publication-count">4 papers</span>
+  <span class="publication-count">3 papers</span>
 </summary>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/scope-router.png' alt="SCOPE-Router" width="100%"></div></div>
@@ -142,18 +141,6 @@ Tao Yu†, Yifei Qu†, **Zhiqing Cui†** (Project Leader), Pengfei Zhou, Zhong
 **arXiv preprint**
 
 † Equal contribution
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/uno.png' alt="Uno-Orchestra" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Uno-Orchestra: Parsimonious Agent Routing via Selective Delegation](https://arxiv.org/abs/2605.05007)
-
-**Zhiqing Cui**, Haotong Xie, Jiahao Yuan, Cheng Yang, Hanqing Wang, Yuxin Wu, Yifan Wu, Siru Zhong, Tao Yu, Yifu Guo, Siyu Zhang, Xinlei Yu, Qibing Ren, Usman Naseem
-
-**arXiv preprint**
-
 </div>
 </div>
 
