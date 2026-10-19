@@ -283,8 +283,19 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">preprint Papers</span>
-  <span class="publication-count">1 paper</span>
+  <span class="publication-count">2 papers</span>
 </summary>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/discoveryrsi.png' alt="DiscoveryRSI overview" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses](https://arxiv.org/abs/2610.23839)
+
+Jianyuan Zhong, Chenwei Wu, Zhaochen Yu, Xixian Jiang, Xuewei Li, Hao Xiao, Xilin Dai, Junyang Wang, Jiaru Zou, **Zhiqing Cui**, Boyuan Zheng, Jing Xiong, Zhen Zhang, Qiang Gao, Michael Morley, Luis Nakayama, Qiang Xu, Liyue Shen, Tao Gui, Leo Anthony Celi, James Zou, Zhenfei Yin, Yingcheng Wu, Ling Yang
+
+**arXiv preprint**
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/omni-deepsearch.png' alt="Omni-DeepSearch" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
