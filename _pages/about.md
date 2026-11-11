@@ -270,8 +270,19 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">preprint Papers</span>
-  <span class="publication-count">3 papers</span>
+  <span class="publication-count">4 papers</span>
 </summary>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/anchor.png' alt="Anchor framework overview" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[From Reflection to Co-Evolution: Self-Evolving Agents with Locally Verified Memory](https://arxiv.org/abs/2611.10382)
+
+Xinxiang Yin, Xinglang Zhang, Haodong Chen, **Zhiqing Cui**, Weidong Tang, Yuxuan Wang, Junrui Wang, Jingyi Zhang, Jianfeng Zhang, Jian Qian
+
+**arXiv preprint**
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/trinity.png' alt="The Trinity overview" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
