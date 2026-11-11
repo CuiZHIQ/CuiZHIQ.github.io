@@ -169,13 +169,13 @@ if ($Check -in @("Content", "All")) {
 
     Assert-True ($publicationSections.Count -eq 4) "Expected four publication-section disclosures."
     Assert-True (([regex]::Matches($about, 'class="publication-summary"')).Count -eq 4) "Expected four publication summaries."
-    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 19) "Expected 19 paper cards."
+    Assert-True (([regex]::Matches($about, 'class=[''"]paper-box[''"]')).Count -eq 20) "Expected 20 paper cards."
 
     $expectedSections = @(
         @{ Title = 'First-Author Accepted Papers'; Papers = 6; Accepted = 6; Preprint = 0; Open = $true },
         @{ Title = 'First-Author Preprints'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false },
         @{ Title = 'Co-Authored Papers'; Papers = 8; Accepted = 8; Preprint = 0; Open = $false },
-        @{ Title = 'preprint Papers'; Papers = 2; Accepted = 0; Preprint = 2; Open = $false }
+        @{ Title = 'preprint Papers'; Papers = 3; Accepted = 0; Preprint = 3; Open = $false }
     )
 
     foreach ($expected in $expectedSections) {
@@ -199,12 +199,12 @@ if ($Check -in @("Content", "All")) {
     Assert-True ($openSections.Count -eq 1 -and $openSections[0].Title -eq 'First-Author Accepted Papers') "Only First-Author Accepted Papers may be open by default."
 
     Assert-True (([regex]::Matches($about, 'class="badge badge--accepted"')).Count -eq 14) "Expected 14 accepted badges."
-    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 5) "Expected five preprint badges."
+    Assert-True (([regex]::Matches($about, 'class="badge badge--preprint"')).Count -eq 6) "Expected six preprint badges."
     Assert-True (([regex]::Matches($about, 'class="badge"')).Count -eq 0) "Found an unclassified publication badge."
     Assert-True (-not $about.Contains('Assistant Professor [Wentao Zhang](https://github.com) (PKU) to develop automated research agents')) "Research Topics still contains the removed Wentao Zhang clause."
     Assert-True ($about.Contains('I have also collaborated with [Jiahao Yuan](https://jhcircle.github.io/) (ECNU).')) "Jiahao Yuan collaboration sentence is missing."
     Assert-True ($about.Contains('<em>2024.06 - 2024.08</em>, Yangtze River Delta Information Intelligence Innovation Research Institute, China.')) "Yangtze institute internship is missing."
-    Assert-True ($about.Contains('<em>2026.07 - 2026.08</em>, Evolvent AI.')) "Evolvent AI internship is missing."
+    Assert-True ($about.Contains('<em>2026.07 - 2026.11</em>, Evolvent AI.')) "Evolvent AI internship is missing."
     Assert-True ($about.Contains('[LLMSR@XLLM25: Less is More: Enhancing Structured Multi-Agent Reasoning via Quality-Guided Distillation](https://aclanthology.org/2025.xllm-1.23/)')) "Less is More title or official link is missing."
     Assert-True ($about.Contains('[Grounding 3D Affordance from Human-Object-Interaction Videos via Multimodal Large Language Model](https://openreview.net/forum?id=lSZXrNId2d)')) "VideoAfford must use its NeurIPS OpenReview title and link."
     Assert-True ($about.Contains('<div class="badge badge--accepted">NeurIPS 2026</div><img src=''images/videoafford.png''')) "VideoAfford must have a NeurIPS 2026 accepted badge."

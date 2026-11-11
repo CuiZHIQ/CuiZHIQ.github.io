@@ -270,8 +270,19 @@ Qingxiang Liu, **Zhiqing Cui**, Xiaoliang Luo, Yuqian Wu, Zhuoyang Jiang, Huaiyu
 <details class="publication-section" markdown="1">
 <summary class="publication-summary">
   <span class="publication-summary-title">preprint Papers</span>
-  <span class="publication-count">2 papers</span>
+  <span class="publication-count">3 papers</span>
 </summary>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/trinity.png' alt="The Trinity overview" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Create, Evolve, and Explore: A Trinity Recursive Self-Improvement Framework for Multimodal Agents](https://arxiv.org/abs/2610.36077)
+
+Weidong Tang, Ruiheng Wang, Jingxuan Zhang, Hexin Wang, Haoyuan Chen, Zhengfeiyang Zhang, Yixing Ma, Zichen Jiang, Ziyu Guo, Haodong Li, Zhengbo Jiao, **Zhiqing Cui**, Xinxiang Yin, Shuo Liang, Zhenglin Wan, Hongzhan Lin, Wangbo Zhao, Kaipeng Zhang, Pengfei Zhou, Odin Zhang, Yang You
+
+**arXiv preprint**
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge badge--preprint">arXiv</div><img src='images/discoveryrsi.png' alt="DiscoveryRSI overview" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -356,7 +367,7 @@ Tao Yu, Yiming Ding, Shenghua Chai, Minghui Zhang, Zhongtian Luo, Xinming Wang, 
     <a class="internship-logo internship-logo--evolvent" href="https://evolvent.co/" aria-label="Evolvent AI website">
       <img src='images/evolvent-ai.png' alt="Evolvent AI logo">
     </a>
-    <div class="internship-text"><em>2026.07 - 2026.08</em>, Evolvent AI.</div>
+    <div class="internship-text"><em>2026.07 - 2026.11</em>, Evolvent AI.</div>
   </div>
 </div>
 
