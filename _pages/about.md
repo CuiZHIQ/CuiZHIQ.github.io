@@ -349,10 +349,6 @@ Tao Yu, Yiming Ding, Shenghua Chai, Minghui Zhang, Zhongtian Luo, Xinming Wang, 
     <div class="research-experience-text"><em>2025 - 2026</em>, CityMind Lab, Hong Kong University of Science and Technology (Guangzhou). Mentor: <a href="https://yuxuanliang.com/">Yuxuan Liang</a>.</div>
   </div>
   <div class="research-experience-item">
-    <a class="research-experience-logo" href="https://zwt233.github.io/" aria-label="PKU Data-Centric AI Group website"><img src='images/pku.png' alt="Peking University logo"></a>
-    <div class="research-experience-text"><em>2026 - 2026</em>, PKU-DCAI (Data-Centric AI) Research Group, Peking University. Mentor: <a href="https://zwt233.github.io/">Wentao Zhang</a>.</div>
-  </div>
-  <div class="research-experience-item">
     <a class="research-experience-logo" href="https://engineering.tamu.edu/cse/profiles/zhang-yu.html" aria-label="Yu Zhang at Texas A&amp;M University"><img src='images/tamu.png' alt="Texas A&amp;M University logo"></a>
     <div class="research-experience-text"><em>2026 - 2026</em>, SKY Lab, Texas A&amp;M University. Mentor: <a href="https://engineering.tamu.edu/cse/profiles/zhang-yu.html">Yu Zhang</a>.</div>
   </div>

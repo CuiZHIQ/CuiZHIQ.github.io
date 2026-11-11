@@ -255,15 +255,14 @@ if ($Check -in @("Content", "All")) {
         '[Jinhua Zhao](https://dusp.mit.edu/people/jinhua-zhao)',
         '[Dingyi Zhuang](https://mobility.mit.edu/people/dingyi-zhuang/)',
         '<a href="https://mingjin.dev/">Ming Jin</a>',
-        '<a href="https://shiruipan.github.io/">Shirui Pan</a>',
-        '<a href="https://zwt233.github.io/">Wentao Zhang</a>'
+        '<a href="https://shiruipan.github.io/">Shirui Pan</a>'
     )
     foreach ($peopleLink in $expectedPeopleLinks) {
         Assert-True ($about.Contains($peopleLink)) "Missing verified person homepage: $peopleLink"
     }
 
-    Assert-True (([regex]::Matches($about, 'class="research-experience-item"')).Count -eq 7) "Expected seven Research Experience rows."
-    Assert-True (([regex]::Matches($about, 'class="research-experience-logo')).Count -eq 7) "Expected seven large Research Experience logos."
+    Assert-True (([regex]::Matches($about, 'class="research-experience-item"')).Count -eq 6) "Expected six Research Experience rows."
+    Assert-True (([regex]::Matches($about, 'class="research-experience-logo')).Count -eq 6) "Expected six large Research Experience logos."
     Assert-True ($about.Contains('href="https://di.ustc.edu.cn/main.htm" aria-label="Data Intelligence Lab website"><img src=''images/ustc.png'' alt="University of Science and Technology of China logo"')) "Data Intelligence Lab row must link its USTC crest to the laboratory website."
     Assert-True ($about.Contains('href="https://www.citymind.top/" aria-label="CityMind Lab website"><img src=''images/Hong_Kong_University_of_Science_and_Technology-Logo.wine.svg'' alt="Hong Kong University of Science and Technology logo"')) "CityMind row must link its HKUST school logo to the laboratory website."
     Assert-True ($about.Contains('href="https://trust-agi.github.io/" aria-label="TrustAGI Lab website"><img src=''images/Griffith_University_Logo_Variant_2022.svg'' alt="Griffith University logo"')) "TrustAGI row must link its Griffith logo to the laboratory website."
