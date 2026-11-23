@@ -19,7 +19,7 @@ redirect_from:
 
 # About Me
 
-Hello! I am a fourth-year undergraduate student (2023-2027) pursuing a dual degree program at the University of Reading and Nanjing University of Information Science and Technology, majoring in Data Science. I have published over ten papers in leading journals and conferences. I am seeking PhD positions for 2027 Fall and warmly welcome any remote/onsite industrial or research internship. Please feel free to contact me via email at <a href="mailto:zhiqing@nuist.edu.cn">zhiqing@nuist.edu.cn</a> or <a href="mailto:dh803755@student.reading.ac.uk">dh803755@student.reading.ac.uk</a>.
+Hello! I am a fourth-year undergraduate student (2023-2027) pursuing a dual degree program at the University of Reading and Nanjing University of Information Science and Technology, majoring in Data Science. I have published over ten papers in leading journals and conferences. I will join the Hong Kong University of Science and Technology (HKUST) as a PhD student in Fall 2027. I warmly welcome opportunities for remote or onsite industrial and research internships. Please feel free to contact me via email at <a href="mailto:zhiqing@nuist.edu.cn">zhiqing@nuist.edu.cn</a> or <a href="mailto:dh803755@student.reading.ac.uk">dh803755@student.reading.ac.uk</a>.
 
 # 🚀 Research Aim
 My research interests lie at the intersection of AI for Earth Science (AI4Earth), spatiotemporal data mining, and the reasoning, scheduling, and memory capabilities of LLM agents. I am dedicated to applying these techniques, along with multimodal reasoning, to large-scale real-world scenarios like air pollution management, ultimately aiming to deepen our understanding of the Earth's environment.
